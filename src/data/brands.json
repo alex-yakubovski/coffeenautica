@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Lavazza",
+    "slug": "lavazza",
+    "domain": "lavazza.com"
+  },
+  {
+    "name": "Starbucks",
+    "slug": "starbucks",
+    "domain": "starbucks.com"
+  },
+  {
+    "name": "Illy",
+    "slug": "illy",
+    "domain": "illy.com"
+  },
+  {
+    "name": "Peet's Coffee",
+    "slug": "peets",
+    "domain": "peets.com"
+  },
+  {
+    "name": "Blue Bottle",
+    "slug": "blue-bottle",
+    "domain": "bluebottlecoffee.com"
+  },
+  {
+    "name": "Stumptown",
+    "slug": "stumptown",
+    "domain": "stumptowncoffee.com"
+  }
+]
