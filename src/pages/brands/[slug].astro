@@ -1,47 +1,24 @@
 ---
 import brands from '../../data/brands.json';
 
-// Эта функция говорит Astro, какие страницы нужно создать
 export async function getStaticPaths() {
-  return brands.map((brand) => ({
-    params: { slug: brand.slug },
-    props: { brand },
-  }));
+  return brands.map((brand) => {
+    // Генерируем slug из имени: переводим в нижний регистр и меняем пробелы на дефисы
+    const generatedSlug = brand.name
+      .toLowerCase()
+      .replace(/\s+/g, '-')       // Пробелы в дефисы
+      .replace(/[^\w-]+/g, '')     // Удаляем всё, что не буквы и не дефисы
+      .replace(/--+/g, '-')        // Убираем двойные дефисы
+      .trim();
+
+    return {
+      params: { slug: generatedSlug },
+      props: { brand },
+    };
+  });
 }
 
 const { brand } = Astro.props;
-const amazonTag = "coffeenautica-20"; // Твой будущий ID
-const amazonLink = `https://www.amazon.com/s?k=${brand.name}+coffee+beans&tag=${amazonTag}`;
+const amazonTag = "coffeenautica-20";
+const amazonLink = `https://www.amazon.com/s?k=${encodeURIComponent(brand.name)}+coffee+beans&tag=${amazonTag}`;
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>{brand.name} | Coffeenautica</title>
-		<style>
-			body { font-family: sans-serif; padding: 50px; line-height: 1.6; max-width: 800px; margin: 0 auto; }
-			.back-link { text-decoration: none; color: #666; font-size: 0.9rem; }
-			h1 { font-size: 3rem; margin: 20px 0; }
-			.cta-button {
-				display: inline-block;
-				background: #232f3e;
-				color: white;
-				padding: 15px 30px;
-				border-radius: 8px;
-				text-decoration: none;
-				font-weight: bold;
-				margin-top: 20px;
-			}
-			.cta-button:hover { background: #000; }
-		</style>
-	</head>
-	<body>
-		<a href="/" class="back-link">← Back to Index</a>
-		<h1>{brand.name}</h1>
-		<p>Explore premium coffee selections from {brand.name}. Find the best roasts and whole bean options available on the market.</p>
-		
-		<a href={amazonLink} target="_blank" class="cta-button">
-			Shop {brand.name} on Amazon
-		</a>
-	</body>
-</html>
