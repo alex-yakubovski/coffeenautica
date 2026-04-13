@@ -1,37 +1,64 @@
 [
+[
   {
-    "name": "Lavazza",
-    "slug": "lavazza",
-    "domain": "lavazza.com"
+    "name": "Nescafé",
+    "origin": "Switzerland",
+    "link": "https://www.nescafe.com",
+    "description": "The world's most consumed coffee brand, dominating the instant coffee market globally."
   },
   {
     "name": "Starbucks",
-    "slug": "starbucks",
-    "domain": "starbucks.com"
+    "origin": "USA",
+    "link": "https://www.starbucks.com",
+    "description": "The undisputed leader in the global coffeehouse industry and premium retail beans."
   },
   {
-    "name": "Illy",
-    "slug": "illy",
-    "domain": "illy.com"
+    "name": "Nespresso",
+    "origin": "Switzerland",
+    "link": "https://www.nespresso.com",
+    "description": "The global gold standard for portioned espresso and high-end capsule systems."
   },
   {
-    "name": "Peet's Coffee",
-    "slug": "peets",
-    "domain": "peets.com"
+    "name": "Folgers",
+    "origin": "USA",
+    "link": "https://www.folgerscoffee.com",
+    "description": "The top-selling retail ground coffee brand in the United States by volume."
   },
   {
-    "name": "Blue Bottle",
-    "slug": "blue-bottle",
-    "domain": "bluebottlecoffee.com"
+    "name": "Lavazza",
+    "origin": "Italy",
+    "link": "https://www.lavazza.com",
+    "description": "Italy's premier coffee brand and a global leader in espresso culture."
   },
   {
-    "name": "Stumptown",
-    "slug": "stumptown",
-    "domain": "stumptowncoffee.com"
+    "name": "Jacobs",
+    "origin": "Germany",
+    "link": "https://www.jacobscoffee.com",
+    "description": "One of Europe's most popular brands, leading markets in Germany, Austria, and Eastern Europe."
   },
   {
-    "name": "Stumptown",
-    "slug": "stumptown",
-    "domain": "stumptowncoffee.com"
+    "name": "Costa Coffee",
+    "origin": "UK",
+    "link": "https://www.costa.co.uk",
+    "description": "The second largest coffee chain in the world, with a massive presence in Europe and Asia."
+  },
+  {
+    "name": "Maxwell House",
+    "origin": "USA",
+    "link": "https://www.myfoodandfamily.com/brands/maxwell-house",
+    "description": "A historic American mass-market leader known for its widespread retail accessibility."
+  },
+  {
+    "name": "Dunkin'",
+    "origin": "USA",
+    "link": "https://www.dunkindonuts.com",
+    "description": "A powerhouse in the US coffee market, known for high-speed service and loyal daily drinkers."
+  },
+  {
+    "name": "Tim Hortons",
+    "origin": "Canada",
+    "link": "https://www.timhortons.com",
+    "description": "Dominates the Canadian market with nearly 80% share of the quick-service coffee sector."
   }
+]
 ]
