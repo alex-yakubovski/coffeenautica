@@ -2,13 +2,15 @@
 import brands from '../../data/brands.json';
 
 export async function getStaticPaths() {
-  return brands.map((brand) => {
-    // Генерируем slug из имени: переводим в нижний регистр и меняем пробелы на дефисы
+  // Фильтруем список, оставляя только те объекты, где точно есть имя
+  const validBrands = brands.filter(brand => brand && brand.name);
+
+  return validBrands.map((brand) => {
     const generatedSlug = brand.name
       .toLowerCase()
-      .replace(/\s+/g, '-')       // Пробелы в дефисы
-      .replace(/[^\w-]+/g, '')     // Удаляем всё, что не буквы и не дефисы
-      .replace(/--+/g, '-')        // Убираем двойные дефисы
+      .replace(/\s+/g, '-')
+      .replace(/[^\w-]+/g, '')
+      .replace(/--+/g, '-')
       .trim();
 
     return {
