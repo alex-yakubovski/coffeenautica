@@ -3,8 +3,8 @@
     "name": "Nescafé",
     "slug": "nescafe",
     "origin": "Switzerland",
-    // "icon": "https://www.google.com/s2/favicons?domain=nescafe.com&sz=64",
-    "icon": "https://logo.clearbit.com/starbucks.com",
+    "icon": "https://www.google.com/s2/favicons?domain=nescafe.com&sz=64",
+    
     "link": "https://www.nescafe.com",
     "description": "The world's most consumed coffee brand, leading the instant coffee market globally."
   },
