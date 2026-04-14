@@ -7,44 +7,25 @@ import brands from '../data/brands.json';
     <meta charset="utf-8" />
     <title>Coffeenautica</title>
 </head>
-<body>
-    <main>
-        <div class="brands-grid">
-            {brands.map((brand) => (
-                <div class="brand-card">
-                    <img 
-                        src={`https://www.google.com/s2/favicons?sz=64&domain=${brand.link.replace('https://', '').replace('www.', '').split('/')[0]}`} 
-                        alt={brand.name}
-                    />
-                    <h3>{brand.name}</h3>
-                    <p>{brand.description}</p>
-                    <a href={brand.link}>Site</a>
+<body style="font-family: sans-serif; padding: 20px; background: #fafafa;">
+    <h1 style="text-align: center;">Coffeenautica</h1>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        {brands.map((brand) => (
+            <div style="width: 280px; border: 1px solid #ddd; padding: 15px; border-radius: 10px; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <img 
+                    src={`https://www.google.com/s2/favicons?sz=64&domain=${brand.link.replace('https://', '').replace('www.', '').split('/')[0]}`} 
+                    alt={brand.name} 
+                    style="width: 32px; height: 32px; display: block; margin: 0 auto 10px;"
+                />
+                <h3 style="margin: 0 0 10px 0; text-align: center;">{brand.name}</h3>
+                <p style="font-size: 0.9rem; color: #555; height: 3.6em; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
+                    {brand.description}
+                </p>
+                <div style="text-align: center; margin-top: 10px;">
+                    <a href={brand.link} target="_blank" style="color: #0070f3; text-decoration: none; font-size: 0.8rem; font-weight: bold;">Visit Site →</a>
                 </div>
-            ))}
-        </div>
-    </main>
+            </div>
+        ))}
+    </div>
 </body>
 </html>
-
-<style>
-    /* Простейшие стили, которые точно ничего не скроют */
-    .brands-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 20px;
-    }
-    .brand-card {
-        width: 250px;
-        padding: 15px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        text-align: center;
-    }
-    .brand-card img {
-        width: 32px;
-        height: 32px;
-        display: block;
-        margin: 0 auto 10px;
-    }
-</style>
