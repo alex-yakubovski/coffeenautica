@@ -21,3 +21,15 @@ fetch('./brands.json')
   .catch(err => {
     console.error("ERROR:", err);
   });
+
+  fetch('./brands.json')
+  .then(res => res.text())
+  .then(text => {
+    try {
+      const brands = JSON.parse(text);
+      console.log("JSON OK", brands.length);
+    } catch (e) {
+      console.log("JSON ERROR:");
+      console.log(e);
+    }
+  });
