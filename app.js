@@ -1,20 +1,23 @@
 fetch('./brands.json')
-  .then(res => res.json())
+  .then(r => {
+    if (!r.ok) throw new Error("brands.json not loaded");
+    return r.json();
+  })
   .then(brands => {
-
     const grid = document.getElementById('grid');
 
-    brands.forEach(b => {
-      const card = document.createElement('a');
-      card.href = `brand.html?slug=${b.slug}`;
-      card.className = 'card';
+    if (!grid) {
+      console.log("NO GRID FOUND");
+      return;
+    }
 
-      card.innerHTML = `
-        <img src="${b.logo}" />
+    grid.innerHTML = brands.map(b => `
+      <a href="${b.link}" class="card">
+        <img src="${b.icon}" width="64" height="64">
         <div>${b.name}</div>
-      `;
-
-      grid.appendChild(card);
-    });
-
+      </a>
+    `).join('');
+  })
+  .catch(err => {
+    console.error("ERROR:", err);
   });
