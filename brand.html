@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Brand</title>
+</head>
+<body>
+
+<div id="content"></div>
+
+<script>
+fetch('./brands.json')
+  .then(res => res.json())
+  .then(brands => {
+
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get('slug');
+
+    const brand = brands.find(b => b.slug === slug);
+
+    document.getElementById('content').innerHTML = `
+      <h1>${brand.name}</h1>
+      <img src="${brand.logo}" width="120"/>
+    `;
+  });
+</script>
+
+</body>
+</html>
