@@ -7,18 +7,31 @@ let filtered = [];
 const BATCH = 60;
 let index = 0;
 
-// безопасный путь для GitHub Pages
+// GitHub Pages base (важно)
 const BASE = "/coffeenautica/";
 
+// -------- LOAD DATA --------
 async function load() {
-  const res = await fetch(BASE + "brands.json");
-  original = await res.json();
-  filtered = original;
+  try {
+    const res = await fetch(BASE + "brands.json");
+    original = await res.json();
 
-  render();
+    filtered = original;
+
+    // первый рендер сразу
+    render();
+
+    // сразу подгрузить дальше если экран высокий
+    lazyFill();
+  } catch (e) {
+    console.error("LOAD ERROR:", e);
+  }
 }
 
+// -------- RENDER --------
 function render() {
+  if (index >= filtered.length) return;
+
   const slice = filtered.slice(index, index + BATCH);
 
   const frag = document.createDocumentFragment();
@@ -42,14 +55,27 @@ function render() {
   index += BATCH;
 }
 
-// infinite scroll (без дублей)
-window.addEventListener("scroll", () => {
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {
-    if (index < filtered.length) render();
-  }
-});
+// -------- AUTO FILL (чтобы не было “пусто пока не скроллишь”) --------
+function lazyFill() {
+  const sentinel = document.getElementById("sentinel");
 
-// search (без потери данных)
+  if (!sentinel) {
+    const el = document.createElement("div");
+    el.id = "sentinel";
+    el.style.height = "1px";
+    document.body.appendChild(el);
+
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        render();
+      }
+    });
+
+    observer.observe(el);
+  }
+}
+
+// -------- SEARCH --------
 search.addEventListener("input", (e) => {
   const q = e.target.value.toLowerCase();
 
@@ -61,6 +87,8 @@ search.addEventListener("input", (e) => {
   index = 0;
 
   render();
+  lazyFill();
 });
 
+// -------- START --------
 load();
