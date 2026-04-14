@@ -3,7 +3,7 @@
     "name": "Nescafé",
     "slug": "nescafe",
     "origin": "Switzerland",
-    "icon": "https://www.google.com/s2/favicons?domain=nescafe.com",
+    "icon": "https://www.google.com/s2/favicons?domain=nescafe.com&sz=64",
     "link": "https://www.nescafe.com",
     "description": "The world's most consumed coffee brand, leading the instant coffee market globally."
   },
@@ -11,7 +11,7 @@
     "name": "Starbucks",
     "slug": "starbucks",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=starbucks.com",
+    "icon": "https://www.google.com/s2/favicons?domain=starbucks.com&sz=64",
     "link": "https://www.starbucks.com",
     "description": "The undisputed global leader in coffeehouse chains and premium retail coffee."
   },
@@ -19,7 +19,7 @@
     "name": "Nespresso",
     "slug": "nespresso",
     "origin": "Switzerland",
-    "icon": "https://www.google.com/s2/favicons?domain=nespresso.com",
+    "icon": "https://www.google.com/s2/favicons?domain=nespresso.com&sz=64",
     "link": "https://www.nespresso.com",
     "description": "The global gold standard for portioned espresso and high-end capsule systems."
   },
@@ -27,7 +27,7 @@
     "name": "Folgers",
     "slug": "folgers",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=folgerscoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=folgerscoffee.com&sz=64",
     "link": "https://www.folgerscoffee.com",
     "description": "The best-selling retail ground coffee brand in the United States."
   },
@@ -35,7 +35,7 @@
     "name": "Lavazza",
     "slug": "lavazza",
     "origin": "Italy",
-    "icon": "https://www.google.com/s2/favicons?domain=lavazza.com",
+    "icon": "https://www.google.com/s2/favicons?domain=lavazza.com&sz=64",
     "link": "https://www.lavazza.com",
     "description": "Italy's favorite coffee and a global ambassador for authentic espresso culture."
   },
@@ -43,7 +43,7 @@
     "name": "Dunkin'",
     "slug": "dunkin",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=dunkindonuts.com",
+    "icon": "https://www.google.com/s2/favicons?domain=dunkindonuts.com&sz=64",
     "link": "https://www.dunkindonuts.com",
     "description": "A massive American brand famous for its consistent drip coffee and espresso drinks."
   },
@@ -51,7 +51,7 @@
     "name": "Maxwell House",
     "slug": "maxwell-house",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=myfoodandfamily.com",
+    "icon": "https://www.google.com/s2/favicons?domain=myfoodandfamily.com&sz=64",
     "link": "https://www.myfoodandfamily.com/brands/maxwell-house",
     "description": "A heritage American brand known for its balanced, classic coffee taste."
   },
@@ -59,7 +59,7 @@
     "name": "Jacobs",
     "slug": "jacobs",
     "origin": "Germany",
-    "icon": "https://www.google.com/s2/favicons?domain=jacobscoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=jacobscoffee.com&sz=64",
     "link": "https://www.jacobscoffee.com",
     "description": "One of Europe's most prominent coffee brands, leading the German and Eastern European markets."
   },
@@ -67,7 +67,7 @@
     "name": "Tim Hortons",
     "slug": "tim-hortons",
     "origin": "Canada",
-    "icon": "https://www.google.com/s2/favicons?domain=timhortons.com",
+    "icon": "https://www.google.com/s2/favicons?domain=timhortons.com&sz=64",
     "link": "https://www.timhortons.com",
     "description": "The most iconic Canadian coffee brand with a dominant market share in North America."
   },
@@ -75,7 +75,7 @@
     "name": "Costa Coffee",
     "slug": "costa-coffee",
     "origin": "UK",
-    "icon": "https://www.google.com/s2/favicons?domain=costa.co.uk",
+    "icon": "https://www.google.com/s2/favicons?domain=costa.co.uk&sz=64",
     "link": "https://www.costa.co.uk",
     "description": "The second largest coffeehouse chain in the world, owned by Coca-Cola."
   },
@@ -83,7 +83,7 @@
     "name": "Illy",
     "slug": "illy",
     "origin": "Italy",
-    "icon": "https://www.google.com/s2/favicons?domain=illy.com",
+    "icon": "https://www.google.com/s2/favicons?domain=illy.com&sz=64",
     "link": "https://www.illy.com",
     "description": "A premium Italian roaster known for its science-based approach and single high-quality blend."
   },
@@ -91,7 +91,7 @@
     "name": "Tchibo",
     "slug": "tchibo",
     "origin": "Germany",
-    "icon": "https://www.google.com/s2/favicons?domain=tchibo.de",
+    "icon": "https://www.google.com/s2/favicons?domain=tchibo.de&sz=64",
     "link": "https://www.tchibo.de",
     "description": "A German giant combining coffee roasting with a unique retail and travel business model."
   },
@@ -99,7 +99,7 @@
     "name": "Peet's Coffee",
     "slug": "peets-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=peets.com",
+    "icon": "https://www.google.com/s2/favicons?domain=peets.com&sz=64",
     "link": "https://www.peets.com",
     "description": "The pioneer of the American craft coffee movement, known for deep, dark roasts."
   },
@@ -107,23 +107,23 @@
     "name": "McCafé",
     "slug": "mccafe",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=mcdonalds.com",
+    "icon": "https://www.google.com/s2/favicons?domain=mcdonalds.com&sz=64",
     "link": "https://www.mcdonalds.com",
     "description": "The coffee sub-brand of McDonald's, acting as a global competitor in the retail market."
   },
   {
-    "name": "UCC (Ueshima Coffee Co.)",
+    "name": "UCC",
     "slug": "ucc",
     "origin": "Japan",
-    "icon": "https://www.google.com/s2/favicons?domain=ucc.co.jp",
+    "icon": "https://www.google.com/s2/favicons?domain=ucc.co.jp&sz=64",
     "link": "https://www.ucc.co.jp",
     "description": "A dominant force in Asia and the pioneer of canned coffee drinks."
   },
   {
-    "name": "Keurig / Green Mountain",
-    "slug": "green-mountain",
+    "name": "Keurig",
+    "slug": "keurig",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=keurig.com",
+    "icon": "https://www.google.com/s2/favicons?domain=keurig.com&sz=64",
     "link": "https://www.keurig.com",
     "description": "The leader in the single-serve pod (K-Cup) market in North America."
   },
@@ -131,7 +131,7 @@
     "name": "Douwe Egberts",
     "slug": "douwe-egberts",
     "origin": "Netherlands",
-    "icon": "https://www.google.com/s2/favicons?domain=douwe-egberts.com",
+    "icon": "https://www.google.com/s2/favicons?domain=douwe-egberts.com&sz=64",
     "link": "https://www.douwe-egberts.com",
     "description": "A historic European brand with over 250 years of experience in roasting."
   },
@@ -139,7 +139,7 @@
     "name": "Melitta",
     "slug": "melitta",
     "origin": "Germany",
-    "icon": "https://www.google.com/s2/favicons?domain=melitta.com",
+    "icon": "https://www.google.com/s2/favicons?domain=melitta.com&sz=64",
     "link": "https://www.melitta.com",
     "description": "Famous worldwide for drip coffee systems, filters, and balanced European roasts."
   },
@@ -147,7 +147,7 @@
     "name": "Eight O'Clock Coffee",
     "slug": "eight-oclock",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=eightoclock.com",
+    "icon": "https://www.google.com/s2/favicons?domain=eightoclock.com&sz=64",
     "link": "https://www.eightoclock.com",
     "description": "America's original gourmet whole bean coffee brand with a history since 1859."
   },
@@ -155,7 +155,7 @@
     "name": "Gevalia",
     "slug": "gevalia",
     "origin": "Sweden",
-    "icon": "https://www.google.com/s2/favicons?domain=gevalia.com",
+    "icon": "https://www.google.com/s2/favicons?domain=gevalia.com&sz=64",
     "link": "https://www.gevalia.com",
     "description": "The largest coffee roastery in Scandinavia, known for Swedish-style roasts."
   },
@@ -163,7 +163,7 @@
     "name": "Community Coffee",
     "slug": "community-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=communitycoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=communitycoffee.com&sz=64",
     "link": "https://www.communitycoffee.com",
     "description": "The largest family-owned retail coffee brand in the USA, based in Louisiana."
   },
@@ -171,7 +171,7 @@
     "name": "Blue Bottle Coffee",
     "slug": "blue-bottle",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=bluebottlecoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=bluebottlecoffee.com&sz=64",
     "link": "https://www.bluebottlecoffee.com",
     "description": "A specialty coffee leader known for extreme freshness and precision brewing."
   },
@@ -179,7 +179,7 @@
     "name": "Stumptown Coffee Roasters",
     "slug": "stumptown",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=stumptowncoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=stumptowncoffee.com&sz=64",
     "link": "https://www.stumptowncoffee.com",
     "description": "A cult favorite in the specialty world, famous for cold brew and direct trade."
   },
@@ -187,7 +187,7 @@
     "name": "Caffè Nero",
     "slug": "caffe-nero",
     "origin": "UK",
-    "icon": "https://www.google.com/s2/favicons?domain=caffenero.com",
+    "icon": "https://www.google.com/s2/favicons?domain=caffenero.com&sz=64",
     "link": "https://caffenero.com",
     "description": "A major European chain focused on authentic Italian-style espresso experience."
   },
@@ -195,7 +195,7 @@
     "name": "Pellini Caffè",
     "slug": "pellini",
     "origin": "Italy",
-    "icon": "https://www.google.com/s2/favicons?domain=pellinicaffe.com",
+    "icon": "https://www.google.com/s2/favicons?domain=pellinicaffe.com&sz=64",
     "link": "https://www.pellinicaffe.com",
     "description": "High-end Italian espresso known for its elegance and consistent gourmet quality."
   },
@@ -203,7 +203,7 @@
     "name": "Kimbo",
     "slug": "kimbo",
     "origin": "Italy",
-    "icon": "https://www.google.com/s2/favicons?domain=kimbo.it",
+    "icon": "https://www.google.com/s2/favicons?domain=kimbo.it&sz=64",
     "link": "https://www.kimbo.it",
     "description": "The authentic taste of Naples, famous for intense, dark-roasted Southern Italian espresso."
   },
@@ -211,7 +211,7 @@
     "name": "Caribou Coffee",
     "slug": "caribou-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=cariboucoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=cariboucoffee.com&sz=64",
     "link": "https://www.cariboucoffee.com",
     "description": "A popular American chain focusing on sustainably sourced beans and community."
   },
@@ -219,7 +219,7 @@
     "name": "Kicking Horse",
     "slug": "kicking-horse",
     "origin": "Canada",
-    "icon": "https://www.google.com/s2/favicons?domain=kickinghorsecoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=kickinghorsecoffee.com&sz=64",
     "link": "https://www.kickinghorsecoffee.com",
     "description": "Canada's top organic, fair-trade coffee roaster, famous for bold, energetic roasts."
   },
@@ -227,7 +227,7 @@
     "name": "Intelligentsia",
     "slug": "intelligentsia",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=intelligentsia.com",
+    "icon": "https://www.google.com/s2/favicons?domain=intelligentsia.com&sz=64",
     "link": "https://www.intelligentsia.com",
     "description": "Specialty coffee pioneer known for obsessive quality and direct farmer relationships."
   },
@@ -235,7 +235,7 @@
     "name": "Segafredo Zanetti",
     "slug": "segafredo",
     "origin": "Italy",
-    "icon": "https://www.google.com/s2/favicons?domain=segafredo.it",
+    "icon": "https://www.google.com/s2/favicons?domain=segafredo.it&sz=64",
     "link": "https://www.segafredo.it",
     "description": "A global leader in the professional espresso market and worldwide cafe franchising."
   },
@@ -243,7 +243,7 @@
     "name": "Seattle's Best Coffee",
     "slug": "seattles-best",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=seattlesbest.com",
+    "icon": "https://www.google.com/s2/favicons?domain=seattlesbest.com&sz=64",
     "link": "https://www.seattlesbest.com",
     "description": "A popular American brand known for its smooth-roasted coffee, now part of the Nestlé portfolio."
   },
@@ -251,7 +251,7 @@
     "name": "L'Or",
     "slug": "lor",
     "origin": "France",
-    "icon": "https://www.google.com/s2/favicons?domain=lorespresso.com",
+    "icon": "https://www.google.com/s2/favicons?domain=lorespresso.com&sz=64",
     "link": "https://www.lorespresso.com",
     "description": "A high-end global espresso brand famous for its gold-standard capsules and intense flavor."
   },
@@ -259,7 +259,7 @@
     "name": "Death Wish Coffee",
     "slug": "death-wish",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=deathwishcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=deathwishcoffee.com&sz=64",
     "link": "https://www.deathwishcoffee.com",
     "description": "Marketed as the world's strongest coffee, utilizing a unique roasting process and bean blend."
   },
@@ -267,7 +267,7 @@
     "name": "Gloria Jean's",
     "slug": "gloria-jeans",
     "origin": "Australia",
-    "icon": "https://www.google.com/s2/favicons?domain=gloriajeanscoffees.com",
+    "icon": "https://www.google.com/s2/favicons?domain=gloriajeanscoffees.com&sz=64",
     "link": "https://www.gloriajeanscoffees.com",
     "description": "A major global coffeehouse chain specializing in flavored coffees and espresso drinks."
   },
@@ -275,7 +275,7 @@
     "name": "Counter Culture Coffee",
     "slug": "counter-culture",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=counterculturecoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=counterculturecoffee.com&sz=64",
     "link": "https://counterculturecoffee.com",
     "description": "A pioneer in transparency and sustainability within the American specialty coffee industry."
   },
@@ -283,7 +283,7 @@
     "name": "Julius Meinl",
     "slug": "julius-meinl",
     "origin": "Austria",
-    "icon": "https://www.google.com/s2/favicons?domain=meinlcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=meinlcoffee.com&sz=64",
     "link": "https://www.meinlcoffee.com",
     "description": "The ambassador of Viennese coffee house culture, known for its premium European roasts."
   },
@@ -291,7 +291,7 @@
     "name": "Tassimo",
     "slug": "tassimo",
     "origin": "France",
-    "icon": "https://www.google.com/s2/favicons?domain=tassimo.com",
+    "icon": "https://www.google.com/s2/favicons?domain=tassimo.com&sz=64",
     "link": "https://www.tassimo.com",
     "description": "A major single-serve system brand offering a wide variety of T-Disc hot beverages."
   },
@@ -299,7 +299,7 @@
     "name": "Philz Coffee",
     "slug": "philz",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=philzcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=philzcoffee.com&sz=64",
     "link": "https://www.philzcoffee.com",
     "description": "Known for its unique 'one cup at a time' pour-over method and signature mint mojito coffee."
   },
@@ -307,7 +307,7 @@
     "name": "Carte Noire",
     "slug": "carte-noire",
     "origin": "France",
-    "icon": "https://www.google.com/s2/favicons?domain=cartenoire.fr",
+    "icon": "https://www.google.com/s2/favicons?domain=cartenoire.fr&sz=64",
     "link": "https://www.cartenoire.fr",
     "description": "The leading premium coffee brand in France, synonymous with luxury and intense aroma."
   },
@@ -315,15 +315,15 @@
     "name": "Chock full o'Nuts",
     "slug": "chock-full-onuts",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=chockfullonuts.com",
+    "icon": "https://www.google.com/s2/favicons?domain=chockfullonuts.com&sz=64",
     "link": "https://www.chockfullonuts.com",
     "description": "A classic New York brand, famous for its 'Heavenly Coffee' and iconic yellow tins."
   },
   {
-    "name": "La Colombe Torrefaction",
+    "name": "La Colombe",
     "slug": "la-colombe",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=lacolombe.com",
+    "icon": "https://www.google.com/s2/favicons?domain=lacolombe.com&sz=64",
     "link": "https://www.lacolombe.com",
     "description": "A specialty roaster and retailer credited with the invention of the Draft Latte."
   },
@@ -331,7 +331,7 @@
     "name": "Allegro Coffee",
     "slug": "allegro",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=allegrocoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=allegrocoffee.com&sz=64",
     "link": "https://www.allegrocoffee.com",
     "description": "The exclusive whole bean coffee provider for Whole Foods Market, focused on organic sourcing."
   },
@@ -339,7 +339,7 @@
     "name": "Peaberry Coffee",
     "slug": "peaberry",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=peaberrycoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=peaberrycoffee.com&sz=64",
     "link": "https://peaberrycoffee.com",
     "description": "A specialty brand focused on the rare, small, and flavorful peaberry coffee beans."
   },
@@ -347,7 +347,7 @@
     "name": "Dutch Bros Coffee",
     "slug": "dutch-bros",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=dutchbros.com",
+    "icon": "https://www.google.com/s2/favicons?domain=dutchbros.com&sz=64",
     "link": "https://www.dutchbros.com",
     "description": "One of the largest privately held drive-thru coffee chains in the United States."
   },
@@ -355,7 +355,7 @@
     "name": "New England Coffee",
     "slug": "new-england-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=newenglandcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=newenglandcoffee.com&sz=64",
     "link": "https://www.newenglandcoffee.com",
     "description": "A staple in the Northeastern US, offering over 50 varieties of sustainably sourced coffee."
   },
@@ -363,7 +363,7 @@
     "name": "Bustelo",
     "slug": "caf-bustelo",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=cafebustelo.com",
+    "icon": "https://www.google.com/s2/favicons?domain=cafebustelo.com&sz=64",
     "link": "https://www.cafebustelo.com",
     "description": "A vibrant Latin-inspired brand famous for its high-energy espresso-style coffee."
   },
@@ -371,7 +371,7 @@
     "name": "Pilon",
     "slug": "caf-pilon",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=cafepilon.com",
+    "icon": "https://www.google.com/s2/favicons?domain=cafepilon.com&sz=64",
     "link": "https://www.cafepilon.com",
     "description": "A classic Cuban-style coffee brand known for its fine grind and bold, dark flavor."
   },
@@ -379,7 +379,7 @@
     "name": "Molinari",
     "slug": "caffe-molinari",
     "origin": "Italy",
-    "icon": "https://www.google.com/s2/favicons?domain=caffemolinari.com",
+    "icon": "https://www.google.com/s2/favicons?domain=caffemolinari.com&sz=64",
     "link": "https://www.caffemolinari.com",
     "description": "A historic Italian roaster from Modena with centuries of coffee-making tradition."
   },
@@ -387,7 +387,7 @@
     "name": "Caffè Vergnano",
     "slug": "caffe-vergnano",
     "origin": "Italy",
-    "icon": "https://www.google.com/s2/favicons?domain=caffevergnano.com",
+    "icon": "https://www.google.com/s2/favicons?domain=caffevergnano.com&sz=64",
     "link": "https://www.caffevergnano.com",
     "description": "One of Italy's oldest roasters, maintaining high standards of slow-roasting tradition."
   },
@@ -395,15 +395,15 @@
     "name": "Hausbrandt",
     "slug": "hausbrandt",
     "origin": "Italy",
-    "icon": "https://www.google.com/s2/favicons?domain=hausbrandt.it",
+    "icon": "https://www.google.com/s2/favicons?domain=hausbrandt.it&sz=64",
     "link": "https://www.hausbrandt.it",
     "description": "A prestigious Trieste-based brand known for its premium quality and artistic packaging."
   },
   {
-    "name": "Danesi Caffè",
+    "name": "Danesicaffè",
     "slug": "danesi-caffe",
     "origin": "Italy",
-    "icon": "https://www.google.com/s2/favicons?domain=danesicaffe.it",
+    "icon": "https://www.google.com/s2/favicons?domain=danesicaffe.it&sz=64",
     "link": "https://www.danesicaffe.it",
     "description": "A Roman institution since 1905, representing the quintessential Italian espresso."
   },
@@ -411,7 +411,7 @@
     "name": "Goppion Caffè",
     "slug": "goppion-caffe",
     "origin": "Italy",
-    "icon": "https://www.google.com/s2/favicons?domain=goppioncaffe.it",
+    "icon": "https://www.google.com/s2/favicons?domain=goppioncaffe.it&sz=64",
     "link": "https://www.goppioncaffe.it",
     "description": "A Venetian roaster recognized for its dedication to the culture of high-quality coffee."
   },
@@ -419,7 +419,7 @@
     "name": "Musetti",
     "slug": "musetti",
     "origin": "Italy",
-    "icon": "https://www.google.com/s2/favicons?domain=musetti.it",
+    "icon": "https://www.google.com/s2/favicons?domain=musetti.it&sz=64",
     "link": "https://www.musetti.it",
     "description": "Exporting Italian coffee passion to over 60 countries for nearly 90 years."
   },
@@ -427,7 +427,7 @@
     "name": "Caffè Borbone",
     "slug": "caffe-borbone",
     "origin": "Italy",
-    "icon": "https://www.google.com/s2/favicons?domain=caffeborbone.it",
+    "icon": "https://www.google.com/s2/favicons?domain=caffeborbone.it&sz=64",
     "link": "https://www.caffeborbone.it",
     "description": "A rapidly growing Neapolitan brand specialized in espresso pods and dark roasts."
   },
@@ -435,7 +435,7 @@
     "name": "Carraro",
     "slug": "caffe-carraro",
     "origin": "Italy",
-    "icon": "https://www.google.com/s2/favicons?domain=caffecarraro.it",
+    "icon": "https://www.google.com/s2/favicons?domain=caffecarraro.it&sz=64",
     "link": "https://www.caffecarraro.it",
     "description": "Combining over 90 years of experience with modern technology to produce elite blends."
   },
@@ -443,7 +443,7 @@
     "name": "Costadoro",
     "slug": "costadoro",
     "origin": "Italy",
-    "icon": "https://www.google.com/s2/favicons?domain=costadoro.it",
+    "icon": "https://www.google.com/s2/favicons?domain=costadoro.it&sz=64",
     "link": "https://www.costadoro.it",
     "description": "A Turin-based roaster known for its ethical sourcing and premium hospitality supply."
   },
@@ -451,7 +451,7 @@
     "name": "Miko Coffee",
     "slug": "miko",
     "origin": "Belgium",
-    "icon": "https://www.google.com/s2/favicons?domain=mikocoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=mikocoffee.com&sz=64",
     "link": "https://www.mikocoffee.com",
     "description": "One of the world's oldest roasters, leading the office coffee service market in Europe."
   },
@@ -459,7 +459,7 @@
     "name": "Paulig",
     "slug": "paulig",
     "origin": "Finland",
-    "icon": "https://www.google.com/s2/favicons?domain=paulig.com",
+    "icon": "https://www.google.com/s2/favicons?domain=paulig.com&sz=64",
     "link": "https://www.paulig.com",
     "description": "The market leader in Finland and the Baltic states, known for high Nordic quality."
   },
@@ -467,7 +467,7 @@
     "name": "Löfbergs",
     "slug": "lofbergs",
     "origin": "Sweden",
-    "icon": "https://www.google.com/s2/favicons?domain=lofbergs.se",
+    "icon": "https://www.google.com/s2/favicons?domain=lofbergs.se&sz=64",
     "link": "https://www.lofbergs.se",
     "description": "A family-owned Swedish roaster and one of the world's largest importers of organic coffee."
   },
@@ -475,7 +475,7 @@
     "name": "Arvid Nordquist",
     "slug": "arvid-nordquist",
     "origin": "Sweden",
-    "icon": "https://www.google.com/s2/favicons?domain=arvidnordquist.se",
+    "icon": "https://www.google.com/s2/favicons?domain=arvidnordquist.se&sz=64",
     "link": "https://www.arvidnordquist.se",
     "description": "A premium Swedish coffee brand focused on 100% sustainable and carbon-neutral roasting."
   },
@@ -483,7 +483,7 @@
     "name": "Joh. Johannson Coffee",
     "slug": "joh-johannson",
     "origin": "Norway",
-    "icon": "https://www.google.com/s2/favicons?domain=joh-johannson.no",
+    "icon": "https://www.google.com/s2/favicons?domain=joh-johannson.no&sz=64",
     "link": "https://www.joh-johannson.no",
     "description": "The leading roaster in Norway, producing many of the country's favorite daily blends."
   },
@@ -491,7 +491,7 @@
     "name": "Merrild",
     "slug": "merrild",
     "origin": "Denmark",
-    "icon": "https://www.google.com/s2/favicons?domain=merrild-kaffe.dk",
+    "icon": "https://www.google.com/s2/favicons?domain=merrild-kaffe.dk&sz=64",
     "link": "https://www.merrild-kaffe.dk",
     "description": "Denmark's most popular coffee brand, now part of the global Lavazza group."
   },
@@ -499,7 +499,7 @@
     "name": "Biedermann",
     "slug": "biedermann",
     "origin": "Switzerland",
-    "icon": "https://www.google.com/s2/favicons?domain=biedermann.ch",
+    "icon": "https://www.google.com/s2/favicons?domain=biedermann.ch&sz=64",
     "link": "https://www.biedermann.ch",
     "description": "A high-end Swiss dairy and coffee producer known for premium organic products."
   },
@@ -507,7 +507,7 @@
     "name": "Mövenpick",
     "slug": "movenpick",
     "origin": "Switzerland",
-    "icon": "https://www.google.com/s2/favicons?domain=moevenpick-coffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=moevenpick-coffee.com&sz=64",
     "link": "https://www.moevenpick-coffee.com",
     "description": "A luxury Swiss brand offering sophisticated blends according to traditional recipes."
   },
@@ -515,7 +515,7 @@
     "name": "Café de Colombia",
     "slug": "cafe-de-colombia",
     "origin": "Colombia",
-    "icon": "https://www.google.com/s2/favicons?domain=cafedecolombia.com",
+    "icon": "https://www.google.com/s2/favicons?domain=cafedecolombia.com&sz=64",
     "link": "https://www.cafedecolombia.com",
     "description": "The collective brand representing Colombian coffee growers globally under the Juan Valdez icon."
   },
@@ -523,23 +523,15 @@
     "name": "Juan Valdez",
     "slug": "juan-valdez",
     "origin": "Colombia",
-    "icon": "https://www.google.com/s2/favicons?domain=juanvaldezcafestore.com",
+    "icon": "https://www.google.com/s2/favicons?domain=juanvaldezcafestore.com&sz=64",
     "link": "https://www.juanvaldezcafestore.com",
     "description": "The premium retail face of the Colombian Coffee Growers Federation with cafes worldwide."
-  },
-  {
-    "name": "Melitta USA",
-    "slug": "melitta-usa",
-    "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=melitta.com",
-    "link": "https://www.melitta.com",
-    "description": "The American division of the German giant, dominating the filter and pour-over market."
   },
   {
     "name": "Diedrich Coffee",
     "slug": "diedrich",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=keurig.com",
+    "icon": "https://www.google.com/s2/favicons?domain=keurig.com&sz=64",
     "link": "https://www.keurig.com",
     "description": "A heritage specialty brand from California, now a key part of the Keurig K-Cup lineup."
   },
@@ -547,7 +539,7 @@
     "name": "Tully's Coffee",
     "slug": "tullys",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=keurig.com",
+    "icon": "https://www.google.com/s2/favicons?domain=keurig.com&sz=64",
     "link": "https://www.keurig.com",
     "description": "A Seattle-founded specialty brand known for its slow-roasting process and rich flavor."
   },
@@ -555,7 +547,7 @@
     "name": "Barista Prima Coffeehouse",
     "slug": "barista-prima",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=keurig.com",
+    "icon": "https://www.google.com/s2/favicons?domain=keurig.com&sz=64",
     "link": "https://www.keurig.com",
     "description": "Exclusive K-Cup brand designed to emulate the bold taste of European coffee houses."
   },
@@ -563,7 +555,7 @@
     "name": "Newman's Own Organics",
     "slug": "newmans-own",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=newmansown.com",
+    "icon": "https://www.google.com/s2/favicons?domain=newmansown.com&sz=64",
     "link": "https://www.newmansown.com",
     "description": "A major player in the organic coffee market, donating 100% of profits to charity."
   },
@@ -571,7 +563,7 @@
     "name": "Coffee Bean & Tea Leaf",
     "slug": "coffee-bean",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=coffeebean.com",
+    "icon": "https://www.google.com/s2/favicons?domain=coffeebean.com&sz=64",
     "link": "https://www.coffeebean.com",
     "description": "A global specialty coffee retailer famous for its 'Ice Blended' drinks and handcrafted brews."
   },
@@ -579,7 +571,7 @@
     "name": "Dunkin' At Home",
     "slug": "dunkin-at-home",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=dunkinathome.com",
+    "icon": "https://www.google.com/s2/favicons?domain=dunkinathome.com&sz=64",
     "link": "https://www.dunkinathome.com",
     "description": "The massive retail arm of Dunkin', bringing its signature taste to grocery aisles."
   },
@@ -587,7 +579,7 @@
     "name": "Cameron's Coffee",
     "slug": "camerons",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=cameronscoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=cameronscoffee.com&sz=64",
     "link": "https://www.cameronscoffee.com",
     "description": "A Minnesota-based roaster providing high-quality, smooth specialty coffee at retail."
   },
@@ -595,7 +587,7 @@
     "name": "Copper Moon Coffee",
     "slug": "copper-moon",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=coppermooncoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=coppermooncoffee.com&sz=64",
     "link": "https://www.coppermooncoffee.com",
     "description": "A family-owned roaster focused on world-class sourcing and sustainable roasting."
   },
@@ -603,7 +595,7 @@
     "name": "Don Francisco's Coffee",
     "slug": "don-franciscos",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=donfranciscos.com",
+    "icon": "https://www.google.com/s2/favicons?domain=donfranciscos.com&sz=64",
     "link": "https://www.donfranciscos.com",
     "description": "One of the leading family-owned coffee brands in the US, with deep Cuban roots."
   },
@@ -611,7 +603,7 @@
     "name": "Fresh Roasted Coffee",
     "slug": "fresh-roasted",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=freshroastedcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=freshroastedcoffee.com&sz=64",
     "link": "https://www.freshroastedcoffee.com",
     "description": "A modern roaster dedicated to freshness, sustainability, and direct-trade practices."
   },
@@ -619,7 +611,7 @@
     "name": "Java Presse",
     "slug": "java-presse",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=javapresse.com",
+    "icon": "https://www.google.com/s2/favicons?domain=javapresse.com&sz=64",
     "link": "https://www.javapresse.com",
     "description": "Focusing on the manual brewing experience and high-quality specialty subscription services."
   },
@@ -627,7 +619,7 @@
     "name": "Koffee Kult",
     "slug": "koffee-kult",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=koffeekult.com",
+    "icon": "https://www.google.com/s2/favicons?domain=koffeekult.com&sz=64",
     "link": "https://www.koffeekult.com",
     "description": "A cult-favorite roaster from Florida known for bold, artisan dark roasts."
   },
@@ -635,7 +627,7 @@
     "name": "Mayorga Coffee",
     "slug": "mayorga",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=mayorgacoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=mayorgacoffee.com&sz=64",
     "link": "https://mayorgacoffee.com",
     "description": "Specializing in organic and direct-trade Latin American coffee since 1997."
   },
@@ -643,7 +635,7 @@
     "name": "Mount Hagen",
     "slug": "mount-hagen",
     "origin": "Germany",
-    "icon": "https://www.google.com/s2/favicons?domain=mount-hagen.de",
+    "icon": "https://www.google.com/s2/favicons?domain=mount-hagen.de&sz=64",
     "link": "https://www.mount-hagen.de",
     "description": "The world's top-rated brand for organic and fair-trade instant coffee."
   },
@@ -651,7 +643,7 @@
     "name": "OldSpitfire Coffee",
     "slug": "oldspitfire",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=oldspitfire.com",
+    "icon": "https://www.google.com/s2/favicons?domain=oldspitfire.com&sz=64",
     "link": "https://oldspitfire.com",
     "description": "Small-batch specialty coffee with a focus on historical roasting profiles."
   },
@@ -659,7 +651,7 @@
     "name": "Onyx Coffee Lab",
     "slug": "onyx",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=onyxcoffeelab.com",
+    "icon": "https://www.google.com/s2/favicons?domain=onyxcoffeelab.com&sz=64",
     "link": "https://onyxcoffeelab.com",
     "description": "A multi-award-winning specialty roaster pushed the boundaries of modern coffee."
   },
@@ -667,7 +659,7 @@
     "name": "Out of the Grey",
     "slug": "out-of-the-grey",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=outofthegreycoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=outofthegreycoffee.com&sz=64",
     "link": "https://www.outofthegreycoffee.com",
     "description": "Artisan micro-roaster offering hundreds of single-origin and flavored varieties."
   },
@@ -675,7 +667,7 @@
     "name": "Pachamama Coffee",
     "slug": "pachamama",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=pachamamacoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=pachamamacoffee.com&sz=64",
     "link": "https://pachamamacoffee.com",
     "description": "A unique farmer-owned cooperative based in California roasting global beans."
   },
@@ -683,7 +675,7 @@
     "name": "Raven's Brew Coffee",
     "slug": "ravens-brew",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=ravensbrewcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=ravensbrewcoffee.com&sz=64",
     "link": "https://ravensbrewcoffee.com",
     "description": "Alaskan-born roaster famous for its artistic labels and high-energy blends."
   },
@@ -691,7 +683,7 @@
     "name": "Real Good Coffee Co",
     "slug": "real-good-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=realgoodcoffeeco.com",
+    "icon": "https://www.google.com/s2/favicons?domain=realgoodcoffeeco.com&sz=64",
     "link": "https://realgoodcoffeeco.com",
     "description": "Focused on affordable, high-quality bulk coffee without the branding fluff."
   },
@@ -699,7 +691,7 @@
     "name": "Red Bay Coffee",
     "slug": "red-bay",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=redbaycoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=redbaycoffee.com&sz=64",
     "link": "https://www.redbaycoffee.com",
     "description": "Leading the 'fourth wave' of coffee with a focus on social impact and inclusivity."
   },
@@ -707,7 +699,7 @@
     "name": "Rishi Tea & Botanicals",
     "slug": "rishi",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=rishi-tea.com",
+    "icon": "https://www.google.com/s2/favicons?domain=rishi-tea.com&sz=64",
     "link": "https://rishi-tea.com",
     "description": "While tea-focused, their coffee selection is elite and focused on organic botanical purity."
   },
@@ -715,7 +707,7 @@
     "name": "Roast Run Coffee",
     "slug": "roast-run",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=roastrun.com",
+    "icon": "https://www.google.com/s2/favicons?domain=roastrun.com&sz=64",
     "link": "https://roastrun.com",
     "description": "Specializing in fresh-to-order roasts for the modern active lifestyle."
   },
@@ -723,7 +715,7 @@
     "name": "Rough & Tumble",
     "slug": "rough-tumble",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=roughtumblecoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=roughtumblecoffee.com&sz=64",
     "link": "https://roughtumblecoffee.com",
     "description": "A specialty roaster celebrating the rugged spirit and classic bold coffee flavors."
   },
@@ -731,7 +723,7 @@
     "name": "San Francisco Bay Coffee",
     "slug": "sf-bay-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=sfbaycoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=sfbaycoffee.com&sz=64",
     "link": "https://sfbaycoffee.com",
     "description": "A family-run giant known for high-quality pods and environmentally friendly packaging."
   },
@@ -739,7 +731,7 @@
     "name": "Slayer Coffee",
     "slug": "slayer",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=slayerespresso.com",
+    "icon": "https://www.google.com/s2/favicons?domain=slayerespresso.com&sz=64",
     "link": "https://slayerespresso.com",
     "description": "Primarily an equipment giant, but their bean selections are world-class standard."
   },
@@ -747,7 +739,7 @@
     "name": "Stone Street Coffee",
     "slug": "stone-street",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=stonestreetcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=stonestreetcoffee.com&sz=64",
     "link": "https://www.stonestreetcoffee.com",
     "description": "A New York City original, roasting premium artisanal beans in the heart of Brooklyn."
   },
@@ -755,7 +747,7 @@
     "name": "Tanamera Coffee",
     "slug": "tanamera",
     "origin": "Indonesia",
-    "icon": "https://www.google.com/s2/favicons?domain=tanameracoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=tanameracoffee.com&sz=64",
     "link": "https://tanameracoffee.com",
     "description": "An award-winning international brand showcasing the best of Indonesian specialty beans."
   },
@@ -763,7 +755,7 @@
     "name": "Ozo Coffee Roasters",
     "slug": "ozo-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=ozocoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=ozocoffee.com&sz=64",
     "link": "https://ozocoffee.com",
     "description": "A Colorado-based specialty roaster known for high-altitude roasting and ethical sourcing."
   },
@@ -771,7 +763,7 @@
     "name": "Dark Horse Coffee Roasters",
     "slug": "dark-horse",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=darkhorsecoffeeroasters.com",
+    "icon": "https://www.google.com/s2/favicons?domain=darkhorsecoffeeroasters.com&sz=64",
     "link": "https://www.darkhorsecoffeeroasters.com",
     "description": "A San Diego favorite focusing on small-batch, direct-trade coffee with a cult following."
   },
@@ -779,7 +771,7 @@
     "name": "Methodical Coffee",
     "slug": "methodical",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=methodicalcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=methodicalcoffee.com&sz=64",
     "link": "https://methodicalcoffee.com",
     "description": "Known for its beautiful branding and incredibly clean, transparent flavor profiles."
   },
@@ -787,7 +779,7 @@
     "name": "Olympia Coffee",
     "slug": "olympia-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=olympiacoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=olympiacoffee.com&sz=64",
     "link": "https://www.olympiacoffee.com",
     "description": "An award-winning B-Corp roaster dedicated to improving the lives of farmers through quality."
   },
@@ -795,7 +787,7 @@
     "name": "Huckleberry Roasters",
     "slug": "huckleberry",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=huckleberryroasters.com",
+    "icon": "https://www.google.com/s2/favicons?domain=huckleberryroasters.com&sz=64",
     "link": "https://huckleberryroasters.com",
     "description": "A Denver-based roaster that emphasizes community and approachable, bright specialty coffee."
   },
@@ -803,7 +795,7 @@
     "name": "Spyhouse Coffee Roasters",
     "slug": "spyhouse",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=spyhousecoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=spyhousecoffee.com&sz=64",
     "link": "https://spyhousecoffee.com",
     "description": "A Minneapolis staple blending heritage aesthetics with contemporary specialty sourcing."
   },
@@ -811,7 +803,7 @@
     "name": "Panther Coffee",
     "slug": "panther-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=panthercoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=panthercoffee.com&sz=64",
     "link": "https://www.panthercoffee.com",
     "description": "The brand that put Miami on the specialty coffee map, specializing in small-batch roasting."
   },
@@ -819,7 +811,7 @@
     "name": "Coava Coffee Roasters",
     "slug": "coava",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=coavacoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=coavacoffee.com&sz=64",
     "link": "https://coavacoffee.com",
     "description": "A Portland legend focused on long-term partnerships with farmers and single-origin purity."
   },
@@ -827,7 +819,7 @@
     "name": "Ruby Coffee Roasters",
     "slug": "ruby-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=rubycoffeeroasters.com",
+    "icon": "https://www.google.com/s2/favicons?domain=rubycoffeeroasters.com&sz=64",
     "link": "https://rubycoffeeroasters.com",
     "description": "Located in rural Wisconsin, this roaster is famous for its colorful branding and elite quality."
   },
@@ -835,7 +827,7 @@
     "name": "Metric Coffee",
     "slug": "metric-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=metriccoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=metriccoffee.com&sz=64",
     "link": "https://metriccoffee.com",
     "description": "A Chicago-based roaster that prioritizes transparency and 'made by hand' precision."
   },
@@ -843,7 +835,7 @@
     "name": "Square Mile Coffee Roasters",
     "slug": "square-mile",
     "origin": "UK",
-    "icon": "https://www.google.com/s2/favicons?domain=squaremilecoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=squaremilecoffee.com&sz=64",
     "link": "https://shop.squaremilecoffee.com",
     "description": "Co-founded by James Hoffmann, this London roaster is a global authority in specialty coffee."
   },
@@ -851,7 +843,7 @@
     "name": "Workshop Coffee",
     "slug": "workshop-coffee",
     "origin": "UK",
-    "icon": "https://www.google.com/s2/favicons?domain=workshopcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=workshopcoffee.com&sz=64",
     "link": "https://workshopcoffee.com",
     "description": "Dedicated to sourcing and roasting the cleanest, sweetest, and freshest coffee available."
   },
@@ -859,7 +851,7 @@
     "name": "Origin Coffee Roasters",
     "slug": "origin-coffee",
     "origin": "UK",
-    "icon": "https://www.google.com/s2/favicons?domain=origincoffee.co.uk",
+    "icon": "https://www.google.com/s2/favicons?domain=origincoffee.co.uk&sz=64",
     "link": "https://www.origincoffee.co.uk",
     "description": "An independent B-Corp roaster from Cornwall with a focus on direct trade and education."
   },
@@ -867,7 +859,7 @@
     "name": "Colonna Coffee",
     "slug": "colonna",
     "origin": "UK",
-    "icon": "https://www.google.com/s2/favicons?domain=colonnacoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=colonnacoffee.com&sz=64",
     "link": "https://colonnacoffee.com",
     "description": "Founded by champion Maxwell Colonna-Dashwood, focused on flavor curation and innovation."
   },
@@ -875,7 +867,7 @@
     "name": "The Barn",
     "slug": "the-barn",
     "origin": "Germany",
-    "icon": "https://www.google.com/s2/favicons?domain=thebarn.de",
+    "icon": "https://www.google.com/s2/favicons?domain=thebarn.de&sz=64",
     "link": "https://thebarn.de",
     "description": "Berlin's leading specialty roaster, famous for its uncompromising light-roast style."
   },
@@ -883,7 +875,7 @@
     "name": "Five Elephant",
     "slug": "five-elephant",
     "origin": "Germany",
-    "icon": "https://www.google.com/s2/favicons?domain=fiveelephant.com",
+    "icon": "https://www.google.com/s2/favicons?domain=fiveelephant.com&sz=64",
     "link": "https://www.fiveelephant.com",
     "description": "A specialty roaster and bakery in Berlin known for sourcing the highest quality beans."
   },
@@ -891,7 +883,7 @@
     "name": "Bonanza Coffee",
     "slug": "bonanza",
     "origin": "Germany",
-    "icon": "https://www.google.com/s2/favicons?domain=bonanzacoffee.de",
+    "icon": "https://www.google.com/s2/favicons?domain=bonanzacoffee.de&sz=64",
     "link": "https://bonanzacoffee.de",
     "description": "Pioneers of the 'Third Wave' in Berlin, roasting coffee that is 'unnecessarily good'."
   },
@@ -899,7 +891,7 @@
     "name": "April Coffee Roasters",
     "slug": "april-coffee",
     "origin": "Denmark",
-    "icon": "https://www.google.com/s2/favicons?domain=aprilcoffeeroasters.com",
+    "icon": "https://www.google.com/s2/favicons?domain=aprilcoffeeroasters.com&sz=64",
     "link": "https://www.aprilcoffeeroasters.com",
     "description": "A Copenhagen-based roaster focused on high-end quality and sustainable growth."
   },
@@ -907,7 +899,7 @@
     "name": "Coffee Collective",
     "slug": "coffee-collective",
     "origin": "Denmark",
-    "icon": "https://www.google.com/s2/favicons?domain=coffeecollective.dk",
+    "icon": "https://www.google.com/s2/favicons?domain=coffeecollective.dk&sz=64",
     "link": "https://coffeecollective.dk",
     "description": "A B-Corp micro-roastery that has set the world standard for direct trade transparency."
   },
@@ -915,7 +907,7 @@
     "name": "Tim Wendelboe",
     "slug": "tim-wendelboe",
     "origin": "Norway",
-    "icon": "https://www.google.com/s2/favicons?domain=timwendelboe.no",
+    "icon": "https://www.google.com/s2/favicons?domain=timwendelboe.no&sz=64",
     "link": "https://timwendelboe.no",
     "description": "A world-renowned roaster and espresso bar that operates more like a high-end wine estate."
   },
@@ -923,7 +915,7 @@
     "name": "Talormade",
     "slug": "talormade",
     "origin": "Norway",
-    "icon": "https://www.google.com/s2/favicons?domain=talormade.no",
+    "icon": "https://www.google.com/s2/favicons?domain=talormade.no&sz=64",
     "link": "https://talormade.no",
     "description": "A vibrant Norwegian brand known for its playful aesthetic and exceptional flavor curation."
   },
@@ -931,7 +923,7 @@
     "name": "Drop Coffee",
     "slug": "drop-coffee",
     "origin": "Sweden",
-    "icon": "https://www.google.com/s2/favicons?domain=dropcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=dropcoffee.com&sz=64",
     "link": "https://www.dropcoffee.com",
     "description": "An award-winning Stockholm roastery focused on sustainable sourcing and light roasts."
   },
@@ -939,7 +931,7 @@
     "name": "Koppi",
     "slug": "koppi",
     "origin": "Sweden",
-    "icon": "https://www.google.com/s2/favicons?domain=koppi.se",
+    "icon": "https://www.google.com/s2/favicons?domain=koppi.se&sz=64",
     "link": "https://www.koppi.se",
     "description": "An international specialty roastery from Helsingborg founded by Swedish barista champions."
   },
@@ -947,7 +939,7 @@
     "name": "Fuglen Coffee",
     "slug": "fuglen",
     "origin": "Norway/Japan",
-    "icon": "https://www.google.com/s2/favicons?domain=fuglen.no",
+    "icon": "https://www.google.com/s2/favicons?domain=fuglen.no&sz=64",
     "link": "https://www.fuglen.no",
     "description": "A unique hybrid brand from Oslo and Tokyo, famous for its retro vibe and Nordic roasting."
   },
@@ -955,7 +947,7 @@
     "name": "Single O",
     "slug": "single-o",
     "origin": "Australia",
-    "icon": "https://www.google.com/s2/favicons?domain=singleo.com.au",
+    "icon": "https://www.google.com/s2/favicons?domain=singleo.com.au&sz=64",
     "link": "https://singleo.com.au",
     "description": "A Sydney institution at the forefront of the Australian specialty coffee movement."
   },
@@ -963,7 +955,7 @@
     "name": "Market Lane Coffee",
     "slug": "market-lane",
     "origin": "Australia",
-    "icon": "https://www.google.com/s2/favicons?domain=marketlane.com.au",
+    "icon": "https://www.google.com/s2/favicons?domain=marketlane.com.au&sz=64",
     "link": "https://www.marketlane.com.au",
     "description": "A boutique Melbourne roaster dedicated to high-quality, seasonal, single-origin beans."
   },
@@ -971,7 +963,7 @@
     "name": "Padre Coffee",
     "slug": "padre",
     "origin": "Australia",
-    "icon": "https://www.google.com/s2/favicons?domain=padrecoffee.com.au",
+    "icon": "https://www.google.com/s2/favicons?domain=padrecoffee.com.au&sz=64",
     "link": "https://www.padrecoffee.com.au",
     "description": "Focused on ethical sourcing and helping people brew better coffee at home."
   },
@@ -979,7 +971,7 @@
     "name": "Duke's Coffee Roasters",
     "slug": "dukes",
     "origin": "Australia",
-    "icon": "https://www.google.com/s2/favicons?domain=dukescoffee.com.au",
+    "icon": "https://www.google.com/s2/favicons?domain=dukescoffee.com.au&sz=64",
     "link": "https://www.dukescoffee.com.au",
     "description": "Roasting elite specialty coffee in Melbourne with a focus on sustainability and detail."
   },
@@ -987,7 +979,7 @@
     "name": "Allpress Espresso",
     "slug": "allpress",
     "origin": "New Zealand",
-    "icon": "https://www.google.com/s2/favicons?domain=allpressespresso.com",
+    "icon": "https://www.google.com/s2/favicons?domain=allpressespresso.com&sz=64",
     "link": "https://www.allpressespresso.com",
     "description": "A global specialty powerhouse known for its unique fluid-bed air roasting technology."
   },
@@ -995,7 +987,7 @@
     "name": "Karaku Coffee",
     "slug": "karaku",
     "origin": "Japan",
-    "icon": "https://www.google.com/s2/favicons?domain=karaku-coffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=karaku-coffee.com&sz=64",
     "link": "https://karaku-coffee.com",
     "description": "A high-end Japanese roaster focused on the precision and ceremony of the perfect cup."
   },
@@ -1003,7 +995,7 @@
     "name": "Onibus Coffee",
     "slug": "onibus",
     "origin": "Japan",
-    "icon": "https://www.google.com/s2/favicons?domain=onibuscoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=onibuscoffee.com&sz=64",
     "link": "https://onibuscoffee.com",
     "description": "A Tokyo-based roaster connecting people through a shared love for specialty coffee."
   },
@@ -1011,7 +1003,7 @@
     "name": "Glitch Coffee & Roasters",
     "slug": "glitch",
     "origin": "Japan",
-    "icon": "https://www.google.com/s2/favicons?domain=glitchcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=glitchcoffee.com&sz=64",
     "link": "https://glitchcoffee.com",
     "description": "Known for its uncompromising commitment to light roasting and high-scoring single origins."
   },
@@ -1019,7 +1011,7 @@
     "name": "Anthology Coffee",
     "slug": "anthology",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=anthologycoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=anthologycoffee.com&sz=64",
     "link": "https://anthologycoffee.com",
     "description": "A Detroit specialty roaster that treats each coffee lot like a unique literary work."
   },
@@ -1027,7 +1019,7 @@
     "name": "Ceremony Coffee",
     "slug": "ceremony-specialty",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=ceremonycoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=ceremonycoffee.com&sz=64",
     "link": "https://ceremonycoffee.com",
     "description": "Focusing on the 'ceremony' of the brewing process with meticulous roast profiles."
   },
@@ -1035,7 +1027,7 @@
     "name": "Sweet Bloom Coffee Roasters",
     "slug": "sweet-bloom",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=sweetbloomcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=sweetbloomcoffee.com&sz=64",
     "link": "https://sweetbloomcoffee.com",
     "description": "Founded by a multi-award-winning barista, focusing on the connection with producers."
   },
@@ -1043,7 +1035,7 @@
     "name": "Cat & Cloud",
     "slug": "cat-and-cloud",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=catandcloud.com",
+    "icon": "https://www.google.com/s2/favicons?domain=catandcloud.com&sz=64",
     "link": "https://catandcloud.com",
     "description": "A California brand that prioritizes positive energy and people-first coffee culture."
   },
@@ -1051,7 +1043,7 @@
     "name": "Quills Coffee",
     "slug": "quills",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=quillscoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=quillscoffee.com&sz=64",
     "link": "https://quillscoffee.com",
     "description": "A Louisville-born specialty roaster where the art of the barista meets the craft of roasting."
   },
@@ -1059,7 +1051,7 @@
     "name": "Madcap Coffee Company",
     "slug": "madcap",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=madcapcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=madcapcoffee.com&sz=64",
     "link": "https://madcapcoffee.com",
     "description": "Known for its clean aesthetic and sourcing some of the most exclusive coffees in the world."
   },
@@ -1067,7 +1059,7 @@
     "name": "PT's Coffee",
     "slug": "pts-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=ptscoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=ptscoffee.com&sz=64",
     "link": "https://www.ptscoffee.com",
     "description": "A pioneer of direct trade, this Kansas roaster has been a specialty leader for decades."
   },
@@ -1075,23 +1067,23 @@
     "name": "Peregrine Espresso",
     "slug": "peregrine",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=peregrineespresso.com",
+    "icon": "https://www.google.com/s2/favicons?domain=peregrineespresso.com&sz=64",
     "link": "https://peregrineespresso.com",
     "description": "A Washington D.C. institution focused on sustainable practices and elite brewing."
   },
   {
-    "name": "Toby's Estate Brooklyn",
+    "name": "Partners Coffee",
     "slug": "tobys-brooklyn",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=partnerscoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=partnerscoffee.com&sz=64",
     "link": "https://www.partnerscoffee.com",
-    "description": "The brand that evolved into Partners Coffee, a foundational piece of NYC's coffee scene."
+    "description": "A foundational piece of NYC's coffee scene, formerly known as Toby's Estate Brooklyn."
   },
   {
     "name": "Amavida Coffee Roasters",
     "slug": "amavida",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=amavida.com",
+    "icon": "https://www.google.com/s2/favicons?domain=amavida.com&sz=64",
     "link": "https://www.amavida.com",
     "description": "A Florida-based B-Corp roaster focused on ethical trading and organic production."
   },
@@ -1099,7 +1091,7 @@
     "name": "Kaldi's Coffee",
     "slug": "kaldis",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=kaldiscoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=kaldiscoffee.com&sz=64",
     "link": "https://kaldiscoffee.com",
     "description": "A St. Louis staple that has grown into a major force in specialty coffee education."
   },
@@ -1107,7 +1099,7 @@
     "name": "Dogwood Coffee Co.",
     "slug": "dogwood",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=dogwoodcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=dogwoodcoffee.com&sz=64",
     "link": "https://www.dogwoodcoffee.com",
     "description": "Based in Minneapolis and Winnipeg, known for its vibrant design and precision roasting."
   },
@@ -1115,7 +1107,7 @@
     "name": "Anodyne Coffee Roasting Co.",
     "slug": "anodyne",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=anodynecoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=anodynecoffee.com&sz=64",
     "link": "https://anodynecoffee.com",
     "description": "A Milwaukee-based independent roaster focusing on small-batch artisan quality."
   },
@@ -1123,7 +1115,7 @@
     "name": "Colectivo Coffee",
     "slug": "colectivo",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=colectivocoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=colectivocoffee.com&sz=64",
     "link": "https://colectivocoffee.com",
     "description": "A heritage roaster known for its bold, art-driven brand and strong community focus."
   },
@@ -1131,7 +1123,7 @@
     "name": "Just Coffee Cooperative",
     "slug": "just-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=justcoffee.coop",
+    "icon": "https://www.google.com/s2/favicons?domain=justcoffee.coop&sz=64",
     "link": "https://justcoffee.coop",
     "description": "A worker-owned cooperative focused on fair trade and social justice for farmers."
   },
@@ -1139,7 +1131,7 @@
     "name": "Peacetree Coffee",
     "slug": "peacetree",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=peacetreecoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=peacetreecoffee.com&sz=64",
     "link": "https://peacetreecoffee.com",
     "description": "An organic, fair trade roaster that prioritizes the environment and coffee quality."
   },
@@ -1147,7 +1139,7 @@
     "name": "Higher Grounds Trading Co.",
     "slug": "higher-grounds",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=highergroundstrading.com",
+    "icon": "https://www.google.com/s2/favicons?domain=highergroundstrading.com&sz=64",
     "link": "https://www.highergroundstrading.com",
     "description": "A B-Corp focused on social change and bird-friendly organic coffee production."
   },
@@ -1155,7 +1147,7 @@
     "name": "Dean's Beans",
     "slug": "deans-beans",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=deansbeans.com",
+    "icon": "https://www.google.com/s2/favicons?domain=deansbeans.com&sz=64",
     "link": "https://deansbeans.com",
     "description": "A social justice-driven roaster that has pioneered ethical sourcing since 1993."
   },
@@ -1163,7 +1155,7 @@
     "name": "Equal Exchange",
     "slug": "equal-exchange",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=equalexchange.coop",
+    "icon": "https://www.google.com/s2/favicons?domain=equalexchange.coop&sz=64",
     "link": "https://equalexchange.coop",
     "description": "The pioneer of fair trade coffee in the United States, owned by its workers."
   },
@@ -1171,31 +1163,15 @@
     "name": "Cafe Mam",
     "slug": "cafe-mam",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=cafemam.com",
+    "icon": "https://www.google.com/s2/favicons?domain=cafemam.com&sz=64",
     "link": "https://cafemam.com",
     "description": "Providing organic, fair trade coffee grown by Mayan farmer cooperatives in Mexico."
-  },
-  {
-    "name": "Pachamama Coffee Farmers",
-    "slug": "pachamama-farmers",
-    "origin": "Global",
-    "icon": "https://www.google.com/s2/favicons?domain=pachamamacoffee.com",
-    "link": "https://pachamamacoffee.com",
-    "description": "A unique global cooperative 100% owned and governed by the farmers themselves."
-  },
-  {
-    "name": "Cafe Femenino",
-    "slug": "cafe-femenino",
-    "origin": "Global",
-    "icon": "https://www.google.com/s2/favicons?domain=cafefemenino.com",
-    "link": "https://www.cafefemenino.com",
-    "description": "A gender-equity project providing specialty coffee grown exclusively by women farmers."
   },
   {
     "name": "Grounds for Change",
     "slug": "grounds-for-change",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=groundsforchange.com",
+    "icon": "https://www.google.com/s2/favicons?domain=groundsforchange.com&sz=64",
     "link": "https://groundsforchange.com",
     "description": "The first coffee roaster in the US to be certified carbon-neutral for all operations."
   },
@@ -1203,7 +1179,7 @@
     "name": "Thanksgiving Coffee Company",
     "slug": "thanksgiving-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=thanksgivingcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=thanksgivingcoffee.com&sz=64",
     "link": "https://www.thanksgivingcoffee.com",
     "description": "A pioneer in artisan roasting with a deep commitment to environmental causes."
   },
@@ -1211,7 +1187,7 @@
     "name": "Larry's Coffee",
     "slug": "larrys-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=larryscoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=larryscoffee.com&sz=64",
     "link": "https://larryscoffee.com",
     "description": "A B-Corp roaster from Raleigh known for its sustainable facility and solar power."
   },
@@ -1219,7 +1195,7 @@
     "name": "Batdorf & Bronson",
     "slug": "batdorf-bronson",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=batdorfcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=batdorfcoffee.com&sz=64",
     "link": "https://www.batdorfcoffee.com",
     "description": "A high-end roaster from Washington state focusing on legendary sustainable blends."
   },
@@ -1227,7 +1203,7 @@
     "name": "Jittery Joe's",
     "slug": "jittery-joes",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=jitteryjoes.com",
+    "icon": "https://www.google.com/s2/favicons?domain=jitteryjoes.com&sz=64",
     "link": "https://jitteryjoes.com",
     "description": "An iconic Georgia roaster famous for its collectible tins and eclectic blends."
   },
@@ -1235,7 +1211,7 @@
     "name": "Dancing Goats Coffee",
     "slug": "dancing-goats",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=dancinggoats.com",
+    "icon": "https://www.google.com/s2/favicons?domain=dancinggoats.com&sz=64",
     "link": "https://www.dancinggoats.com",
     "description": "A flagship brand known for its exceptional balance and smooth espresso roasting."
   },
@@ -1243,7 +1219,7 @@
     "name": "Poverty Bay Coffee Co.",
     "slug": "poverty-bay",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=povertybay.com",
+    "icon": "https://www.google.com/s2/favicons?domain=povertybay.com&sz=64",
     "link": "https://povertybay.com",
     "description": "Focusing on shade-grown, direct-trade coffee that supports the Pacific Northwest ecosystem."
   },
@@ -1251,7 +1227,7 @@
     "name": "Tony's Coffee",
     "slug": "tonys-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=tonyscoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=tonyscoffee.com&sz=64",
     "link": "https://www.tonyscoffee.com",
     "description": "Awarded Roaster of the Year, this Washington brand has led in sustainability since 1971."
   },
@@ -1259,7 +1235,7 @@
     "name": "Victrola Coffee Roasters",
     "slug": "victrola",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=victrolacoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=victrolacoffee.com&sz=64",
     "link": "https://www.victrolacoffee.com",
     "description": "A Seattle staple celebrating the history and art of coffee sourcing and preparation."
   },
@@ -1267,7 +1243,7 @@
     "name": "Lighthouse Roasters",
     "slug": "lighthouse",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=lighthouseroasters.com",
+    "icon": "https://www.google.com/s2/favicons?domain=lighthouseroasters.com&sz=64",
     "link": "https://lighthouseroasters.com",
     "description": "One of Seattle's original artisan roasters, known for its classic cast-iron roasting."
   },
@@ -1275,7 +1251,7 @@
     "name": "Espresso Vivace",
     "slug": "espresso-vivace",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=espressovivace.com",
+    "icon": "https://www.google.com/s2/favicons?domain=espressovivace.com&sz=64",
     "link": "https://espressovivace.com",
     "description": "Founded by David Schomer, this brand is credited with perfecting the northern Italian espresso."
   },
@@ -1283,7 +1259,7 @@
     "name": "Caffe Ladro",
     "slug": "caffe-ladro",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=caffeladro.com",
+    "icon": "https://www.google.com/s2/favicons?domain=caffeladro.com&sz=64",
     "link": "https://caffeladro.com",
     "description": "A Seattle pioneer in ethical sourcing and sustainable bakery practices."
   },
@@ -1291,7 +1267,7 @@
     "name": "Herkimer Coffee",
     "slug": "herkimer",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=herkimercoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=herkimercoffee.com&sz=64",
     "link": "https://herkimercoffee.com",
     "description": "Known for its 'old school' ethics and incredibly balanced espresso blends."
   },
@@ -1299,7 +1275,7 @@
     "name": "Slate Coffee Roasters",
     "slug": "slate-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=slatecoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=slatecoffee.com&sz=64",
     "link": "https://slatecoffee.com",
     "description": "Focused on exposure to the raw, distinct flavors of unblended single-origin coffees."
   },
@@ -1307,7 +1283,7 @@
     "name": "Milstead & Co.",
     "slug": "milstead",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=milsteadandco.com",
+    "icon": "https://www.google.com/s2/favicons?domain=milsteadandco.com&sz=64",
     "link": "https://milsteadandco.com",
     "description": "A curation-focused brand known for showcasing the best roasters in the world."
   },
@@ -1315,7 +1291,7 @@
     "name": "Heart Coffee Roasters",
     "slug": "heart-roasters",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=heartroasters.com",
+    "icon": "https://www.google.com/s2/favicons?domain=heartroasters.com&sz=64",
     "link": "https://www.heartroasters.com",
     "description": "Portland-based roaster famous for its ultra-clean, Nordic-influenced style."
   },
@@ -1323,7 +1299,7 @@
     "name": "Sterling Coffee Roasters",
     "slug": "sterling-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=sterlingcoffeeroasters.com",
+    "icon": "https://www.google.com/s2/favicons?domain=sterlingcoffeeroasters.com&sz=64",
     "link": "https://www.sterlingcoffeeroasters.com",
     "description": "A luxury-focused Portland brand treating coffee like high-end fashion and art."
   },
@@ -1331,7 +1307,7 @@
     "name": "Nossa Familia Coffee",
     "slug": "nossa-familia",
     "origin": "USA/Brazil",
-    "icon": "https://www.google.com/s2/favicons?domain=nossacoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=nossacoffee.com&sz=64",
     "link": "https://www.nossacoffee.com",
     "description": "Focusing on direct family relationships with Brazilian farmers since 2004."
   },
@@ -1339,7 +1315,7 @@
     "name": "Water Avenue Coffee",
     "slug": "water-avenue",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=wateravenuecoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=wateravenuecoffee.com&sz=64",
     "link": "https://wateravenuecoffee.com",
     "description": "Roasting in the heart of Portland's industrial district with a focus on education."
   },
@@ -1347,7 +1323,7 @@
     "name": "Upper Left Roasters",
     "slug": "upper-left",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=upperleftroasters.com",
+    "icon": "https://www.google.com/s2/favicons?domain=upperleftroasters.com&sz=64",
     "link": "https://upperleftroasters.com",
     "description": "A modern Portland roastery emphasizing the culinary potential of single-origin coffee."
   },
@@ -1355,7 +1331,7 @@
     "name": "Proud Mary USA",
     "slug": "proud-mary-usa",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=proudmarycoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=proudmarycoffee.com&sz=64",
     "link": "https://proudmarycoffee.com",
     "description": "The American division of the Australian icon, bringing elite coffee culture to Portland."
   },
@@ -1363,7 +1339,7 @@
     "name": "Case Study Coffee",
     "slug": "case-study",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=casestudycoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=casestudycoffee.com&sz=64",
     "link": "https://www.casestudycoffee.com",
     "description": "Focusing on meticulous sourcing and the science of the perfect extraction."
   },
@@ -1371,7 +1347,7 @@
     "name": "Extracto Coffee Roasters",
     "slug": "extracto",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=extractocoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=extractocoffee.com&sz=64",
     "link": "https://extractocoffee.com",
     "description": "A community-focused Portland roaster known for its exceptional neighborhood vibe."
   },
@@ -1379,7 +1355,7 @@
     "name": "Roseline Coffee",
     "slug": "roseline",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=roselinecoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=roselinecoffee.com&sz=64",
     "link": "https://roselinecoffee.com",
     "description": "Specializing in seasonal coffees that highlight the nuance and clarity of the bean."
   },
@@ -1387,7 +1363,7 @@
     "name": "Deadstock Coffee",
     "slug": "deadstock",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=deadstockcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=deadstockcoffee.com&sz=64",
     "link": "https://www.deadstockcoffee.com",
     "description": "A unique sneaker-themed coffee brand that bridges streetwear and specialty coffee."
   },
@@ -1395,7 +1371,7 @@
     "name": "Push X Pull",
     "slug": "push-x-pull",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=pushxpullcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=pushxpullcoffee.com&sz=64",
     "link": "https://www.pushxpullcoffee.com",
     "description": "Specializing in rare natural-process coffees and experimental fermentation."
   },
@@ -1403,7 +1379,7 @@
     "name": "Never Coffee",
     "slug": "never-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=nevercoffeepdx.com",
+    "icon": "https://www.google.com/s2/favicons?domain=nevercoffeepdx.com&sz=64",
     "link": "https://nevercoffeepdx.com",
     "description": "A high-concept Portland brand known for its colorful art and unique signature lattes."
   },
@@ -1411,7 +1387,7 @@
     "name": "Good Coffee",
     "slug": "good-coffee-pdx",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=goodcoffeepdx.com",
+    "icon": "https://www.google.com/s2/favicons?domain=goodcoffeepdx.com&sz=64",
     "link": "https://goodcoffeepdx.com",
     "description": "Focusing on hospitality and making the specialty coffee experience inclusive."
   },
@@ -1419,7 +1395,7 @@
     "name": "Tandem Coffee Roasters",
     "slug": "tandem-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=tandemcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=tandemcoffee.com&sz=64",
     "link": "https://www.tandemcoffee.com",
     "description": "A Portland, Maine favorite known for its record player vibes and bright roasts."
   },
@@ -1427,7 +1403,7 @@
     "name": "Bard Coffee",
     "slug": "bard-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=bardcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=bardcoffee.com&sz=64",
     "link": "https://www.bardcoffee.com",
     "description": "Co-founded by top industry veterans, focusing on tellable stories from farm to cup."
   },
@@ -1435,7 +1411,7 @@
     "name": "Speckled Ax",
     "slug": "speckled-ax",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=speckledax.com",
+    "icon": "https://www.google.com/s2/favicons?domain=speckledax.com&sz=64",
     "link": "https://speckledax.com",
     "description": "Known for its wood-fired roasting process, giving the coffee a distinct, rich character."
   },
@@ -1443,7 +1419,7 @@
     "name": "Coffee By Design",
     "slug": "coffee-by-design",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=coffeebydesign.com",
+    "icon": "https://www.google.com/s2/favicons?domain=coffeebydesign.com&sz=64",
     "link": "https://www.coffeebydesign.com",
     "description": "A Maine-based B-Corp that has spent decades advocating for social change through coffee."
   },
@@ -1451,7 +1427,7 @@
     "name": "Carrabassett Coffee Company",
     "slug": "carrabassett",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=carrabassettcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=carrabassettcoffee.com&sz=64",
     "link": "https://carrabassettcoffee.com",
     "description": "A heritage roaster from Maine focusing on custom blends and small-batch roasting."
   },
@@ -1459,7 +1435,7 @@
     "name": "Maine Coast Roast",
     "slug": "maine-coast-roast",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=mainecoastroast.com",
+    "icon": "https://www.google.com/s2/favicons?domain=mainecoastroast.com&sz=64",
     "link": "https://mainecoastroast.com",
     "description": "Specializing in fresh, artisanal coffee inspired by the rugged beauty of the Maine coast."
   },
@@ -1467,7 +1443,7 @@
     "name": "Noble Coffee Roasting",
     "slug": "noble-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=noblecoffeeroasting.com",
+    "icon": "https://www.google.com/s2/favicons?domain=noblecoffeeroasting.com&sz=64",
     "link": "https://noblecoffeeroasting.com",
     "description": "An Oregon-based roaster with a reputation for sourcing elite, competition-grade beans."
   },
@@ -1475,7 +1451,7 @@
     "name": "Thump Coffee",
     "slug": "thump",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=thumpcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=thumpcoffee.com&sz=64",
     "link": "https://thumpcoffee.com",
     "description": "Born in Oregon, this brand is focused on 'making the day better' through great coffee."
   },
@@ -1483,7 +1459,7 @@
     "name": "Lone Pine Coffee Roasters",
     "slug": "lone-pine",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=lonepinecoffeeroasters.com",
+    "icon": "https://www.google.com/s2/favicons?domain=lonepinecoffeeroasters.com&sz=64",
     "link": "https://www.lonepinecoffeeroasters.com",
     "description": "A Bend, Oregon favorite focusing on ethically sourced, small-lot specialty coffees."
   },
@@ -1491,7 +1467,7 @@
     "name": "Sisters Coffee Company",
     "slug": "sisters-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=sisterscoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=sisterscoffee.com&sz=64",
     "link": "https://sisterscoffee.com",
     "description": "A family-owned roaster that has been a staple of the Oregon high desert since 1989."
   },
@@ -1499,7 +1475,7 @@
     "name": "Public Domain Coffee",
     "slug": "public-domain",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=publicdomaincoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=publicdomaincoffee.com&sz=64",
     "link": "https://publicdomaincoffee.com",
     "description": "A Portland roastery focusing on the classic craft of roasting and precision brewing."
   },
@@ -1507,7 +1483,7 @@
     "name": "Abraço",
     "slug": "abraco",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=abraconyc.com",
+    "icon": "https://www.google.com/s2/favicons?domain=abraconyc.com&sz=64",
     "link": "https://www.abraconyc.com",
     "description": "A legendary East Village spot known for its unique house-roasted blends and atmosphere."
   },
@@ -1515,7 +1491,7 @@
     "name": "Everyman Espresso",
     "slug": "everyman-espresso",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=everymanespresso.com",
+    "icon": "https://www.google.com/s2/favicons?domain=everymanespresso.com&sz=64",
     "link": "https://www.everymanespresso.com",
     "description": "A New York specialty leader focused on quality, accessibility, and career baristas."
   },
@@ -1523,7 +1499,7 @@
     "name": "Variety Coffee Roasters",
     "slug": "variety-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=varietycoffeeroasters.com",
+    "icon": "https://www.google.com/s2/favicons?domain=varietycoffeeroasters.com&sz=64",
     "link": "https://varietycoffeeroasters.com",
     "description": "A Brooklyn-born roaster focusing on sourcing exceptional coffees for New York's best cafes."
   },
@@ -1531,7 +1507,7 @@
     "name": "Sey Coffee",
     "slug": "sey-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=seycoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=seycoffee.com&sz=64",
     "link": "https://www.seycoffee.com",
     "description": "A contemporary Brooklyn roaster widely considered one of the best in the US for light roasts."
   },
@@ -1539,7 +1515,7 @@
     "name": "Acre Coffee",
     "slug": "acre-coffee",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=acrecoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=acrecoffee.com&sz=64",
     "link": "https://acrecoffee.com",
     "description": "A California roaster known for its sustainable practices and clean, modern cafe designs."
   },
@@ -1547,7 +1523,7 @@
     "name": "Klatch Coffee",
     "slug": "klatch",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=klatchcoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=klatchcoffee.com&sz=64",
     "link": "https://www.klatchcoffee.com",
     "description": "A world-renowned roaster famous for winning numerous 'Coffee of the Year' titles."
   },
@@ -1555,7 +1531,7 @@
     "name": "Portola Coffee Roasters",
     "slug": "portola",
     "origin": "USA",
-    "icon": "https://www.google.com/s2/favicons?domain=portolacoffee.com",
+    "icon": "https://www.google.com/s2/favicons?domain=portolacoffee.com&sz=64",
     "link": "https://www.portolacoffee.com",
     "description": "An Orange County pioneer that treats coffee preparation like a laboratory science."
   }
