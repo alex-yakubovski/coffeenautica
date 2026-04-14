@@ -1,65 +1,66 @@
-document.addEventListener("DOMContentLoaded", () => {
+const grid = document.getElementById("grid");
+const search = document.getElementById("search");
 
-  const grid = document.getElementById("grid");
-  const searchInput = document.getElementById("search");
+let original = [];
+let filtered = [];
 
-  let allBrands = [];
-  let filtered = [];
-  let index = 0;
+const BATCH = 60;
+let index = 0;
 
-  const BATCH = 50;
+// безопасный путь для GitHub Pages
+const BASE = "/coffeenautica/";
 
-  const BASE_URL = "/coffeenautica/";
+async function load() {
+  const res = await fetch(BASE + "brands.json");
+  original = await res.json();
+  filtered = original;
 
-  async function load() {
-    const res = await fetch(BASE_URL + "brands.json");
-    allBrands = await res.json();
-    filtered = allBrands;
+  render();
+}
 
-    render();
-  }
+function render() {
+  const slice = filtered.slice(index, index + BATCH);
 
-  function render() {
-    const slice = filtered.slice(index, index + BATCH);
+  const frag = document.createDocumentFragment();
 
-    const frag = document.createDocumentFragment();
+  slice.forEach(b => {
+    const card = document.createElement("div");
+    card.className = "card";
 
-    slice.forEach(b => {
-      const el = document.createElement("div");
-      el.className = "card";
+    card.innerHTML = `
+      <a href="${b.link}" target="_blank" style="text-decoration:none;color:inherit">
+        <img src="${b.icon}" loading="lazy" />
+        <div class="name">${b.name}</div>
+        <div class="origin">${b.origin}</div>
+      </a>
+    `;
 
-      el.innerHTML = `
-        <a href="${b.link}" target="_blank">
-          <img src="${b.icon}" loading="lazy" />
-          <div>${b.name}</div>
-          <small>${b.origin}</small>
-        </a>
-      `;
-
-      frag.appendChild(el);
-    });
-
-    grid.appendChild(frag);
-    index += BATCH;
-  }
-
-  window.addEventListener("scroll", () => {
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {
-      render();
-    }
+    frag.appendChild(card);
   });
 
-  searchInput.addEventListener("input", (e) => {
-    const q = e.target.value.toLowerCase();
+  grid.appendChild(frag);
+  index += BATCH;
+}
 
-    filtered = allBrands.filter(b =>
-      b.name.toLowerCase().includes(q)
-    );
-
-    grid.innerHTML = "";
-    index = 0;
-    render();
-  });
-
-  load();
+// infinite scroll (без дублей)
+window.addEventListener("scroll", () => {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {
+    if (index < filtered.length) render();
+  }
 });
+
+// search (без потери данных)
+search.addEventListener("input", (e) => {
+  const q = e.target.value.toLowerCase();
+
+  filtered = original.filter(b =>
+    b.name.toLowerCase().includes(q)
+  );
+
+  grid.innerHTML = "";
+  index = 0;
+
+  render();
+});
+
+load();
