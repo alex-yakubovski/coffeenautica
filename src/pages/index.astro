@@ -1,168 +1,50 @@
 ---
-// 1. Импортируем данные (убедись, что файл лежит в src/data/brands.json)
 import brands from '../data/brands.json';
-
-// 2. Функция для вырезания чистого домена (чтобы иконки всегда грузились)
-function getDomain(url) {
-  try {
-    const domain = new URL(url).hostname.replace('www.', '');
-    return domain;
-  } catch (e) {
-    return 'coffee.com';
-  }
-}
-
-const title = "Coffeenautica - Coffee Brands Directory";
 ---
 
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{title}</title>
-  </head>
-  <body>
+    <title>Coffeenautica</title>
+</head>
+<body>
     <main>
-      <h1>{title}</h1>
-      
-      <div class="brands-grid">
-        {brands.map((brand) => (
-          <div class="brand-card">
-            <div class="logo-box">
-              <img 
-                src={`https://www.google.com/s2/favicons?sz=64&domain=${getDomain(brand.link)}`} 
-                alt={brand.name} 
-                loading="lazy"
-                onerror="this.src='https://www.google.com/s2/favicons?sz=64&domain=coffee.com';"
-              />
-            </div>
-            <div class="brand-info">
-              <div class="brand-header">
-                <h3>{brand.name}</h3>
-                <span class="origin-tag">{brand.origin}</span>
-              </div>
-              <p class="description">{brand.description}</p>
-              <a href={brand.link} target="_blank" rel="noopener" class="site-link">
-                Visit Website →
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
+        <div class="brands-grid">
+            {brands.map((brand) => (
+                <div class="brand-card">
+                    <img 
+                        src={`https://www.google.com/s2/favicons?sz=64&domain=${brand.link.replace('https://', '').replace('www.', '').split('/')[0]}`} 
+                        alt={brand.name}
+                    />
+                    <h3>{brand.name}</h3>
+                    <p>{brand.description}</p>
+                    <a href={brand.link}>Site</a>
+                </div>
+            ))}
+        </div>
     </main>
-  </body>
+</body>
 </html>
 
 <style>
-  :root {
-    --bg-color: #f4f4f4;
-    --card-bg: #ffffff;
-    --text-main: #222;
-    --text-muted: #666;
-    --accent: #0070f3;
-  }
-
-  body {
-    font-family: system-ui, sans-serif;
-    background-color: var(--bg-color);
-    margin: 0;
-    padding: 20px;
-    color: var(--text-main);
-  }
-
-  h1 {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .brands-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .brand-card {
-    background: var(--card-bg);
-    border-radius: 12px;
-    padding: 20px;
-    display: flex;
-    gap: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease;
-    align-items: flex-start;
-  }
-
-  .brand-card:hover {
-    transform: translateY(-4px);
-  }
-
-  /* Контейнер для логотипа - фиксирует размер, чтобы не было пустот */
-  .logo-box {
-    width: 64px;
-    height: 64px;
-    min-width: 64px;
-    background: #f9f9f9;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-
-  .logo-box img {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-  }
-
-  .brand-info {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .brand-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .brand-info h3 {
-    margin: 0;
-    font-size: 1.2rem;
-  }
-
-  .origin-tag {
-    font-size: 0.7rem;
-    background: #eee;
-    padding: 2px 8px;
-    border-radius: 12px;
-    text-transform: uppercase;
-    color: var(--text-muted);
-  }
-
-  .description {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    line-height: 1.4;
-    margin: 8px 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .site-link {
-    font-size: 0.85rem;
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .site-link:hover {
-    text-decoration: underline;
-  }
+    /* Простейшие стили, которые точно ничего не скроют */
+    .brands-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+    .brand-card {
+        width: 250px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        text-align: center;
+    }
+    .brand-card img {
+        width: 32px;
+        height: 32px;
+        display: block;
+        margin: 0 auto 10px;
+    }
 </style>
