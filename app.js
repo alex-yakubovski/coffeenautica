@@ -1,35 +1,67 @@
-fetch('./brands.json')
-  .then(r => {
-    if (!r.ok) throw new Error("brands.json not loaded");
-    return r.json();
-  })
-  .then(brands => {
-    const grid = document.getElementById('grid');
+const grid = document.getElementById("grid");
+const searchInput = document.getElementById("search");
 
-    if (!grid) {
-      console.log("NO GRID FOUND");
-      return;
-    }
+let allBrands = [];
+let renderedCount = 0;
 
-    grid.innerHTML = brands.map(b => `
-      <a href="${b.link}" class="card">
-        <img src="${b.icon}" width="64" height="64">
-        <div>${b.name}</div>
+const BATCH_SIZE = 50; // важно: не 1000 сразу
+
+// загрузка JSON
+async function loadBrands() {
+  const res = await fetch("./brands.json");
+  allBrands = await res.json();
+
+  renderNextBatch();
+}
+
+// рендер пачками (lazy render)
+function renderNextBatch() {
+  const slice = allBrands.slice(renderedCount, renderedCount + BATCH_SIZE);
+
+  const fragment = document.createDocumentFragment();
+
+  slice.forEach(brand => {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = `
+      <a href="${brand.link}" target="_blank">
+        <img src="${brand.icon}" alt="${brand.name}" loading="lazy" />
+        <div class="name">${brand.name}</div>
+        <div class="origin">${brand.origin}</div>
       </a>
-    `).join('');
-  })
-  .catch(err => {
-    console.error("ERROR:", err);
+    `;
+
+    fragment.appendChild(card);
   });
 
-  fetch('./brands.json')
-  .then(res => res.text())
-  .then(text => {
-    try {
-      const brands = JSON.parse(text);
-      console.log("JSON OK", brands.length);
-    } catch (e) {
-      console.log("JSON ERROR:");
-      console.log(e);
+  grid.appendChild(fragment);
+  renderedCount += BATCH_SIZE;
+}
+
+// scroll lazy loading
+window.addEventListener("scroll", () => {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {
+    if (renderedCount < allBrands.length) {
+      renderNextBatch();
     }
-  });
+  }
+});
+
+// search
+searchInput.addEventListener("input", (e) => {
+  const q = e.target.value.toLowerCase();
+
+  const filtered = allBrands.filter(b =>
+    b.name.toLowerCase().includes(q)
+  );
+
+  grid.innerHTML = "";
+  renderedCount = 0;
+  allBrands = filtered;
+
+  renderNextBatch();
+});
+
+// старт
+loadBrands();
