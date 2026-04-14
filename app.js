@@ -1,67 +1,65 @@
-const grid = document.getElementById("grid");
-const searchInput = document.getElementById("search");
+document.addEventListener("DOMContentLoaded", () => {
 
-let allBrands = [];
-let renderedCount = 0;
+  const grid = document.getElementById("grid");
+  const searchInput = document.getElementById("search");
 
-const BATCH_SIZE = 50; // важно: не 1000 сразу
+  let allBrands = [];
+  let filtered = [];
+  let index = 0;
 
-// загрузка JSON
-async function loadBrands() {
-  const res = await fetch("./brands.json");
-  allBrands = await res.json();
+  const BATCH = 50;
 
-  renderNextBatch();
-}
+  const BASE_URL = "/coffeenautica/";
 
-// рендер пачками (lazy render)
-function renderNextBatch() {
-  const slice = allBrands.slice(renderedCount, renderedCount + BATCH_SIZE);
+  async function load() {
+    const res = await fetch(BASE_URL + "brands.json");
+    allBrands = await res.json();
+    filtered = allBrands;
 
-  const fragment = document.createDocumentFragment();
+    render();
+  }
 
-  slice.forEach(brand => {
-    const card = document.createElement("div");
-    card.className = "card";
+  function render() {
+    const slice = filtered.slice(index, index + BATCH);
 
-    card.innerHTML = `
-      <a href="${brand.link}" target="_blank">
-        <img src="${brand.icon}" alt="${brand.name}" loading="lazy" />
-        <div class="name">${brand.name}</div>
-        <div class="origin">${brand.origin}</div>
-      </a>
-    `;
+    const frag = document.createDocumentFragment();
 
-    fragment.appendChild(card);
+    slice.forEach(b => {
+      const el = document.createElement("div");
+      el.className = "card";
+
+      el.innerHTML = `
+        <a href="${b.link}" target="_blank">
+          <img src="${b.icon}" loading="lazy" />
+          <div>${b.name}</div>
+          <small>${b.origin}</small>
+        </a>
+      `;
+
+      frag.appendChild(el);
+    });
+
+    grid.appendChild(frag);
+    index += BATCH;
+  }
+
+  window.addEventListener("scroll", () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {
+      render();
+    }
   });
 
-  grid.appendChild(fragment);
-  renderedCount += BATCH_SIZE;
-}
+  searchInput.addEventListener("input", (e) => {
+    const q = e.target.value.toLowerCase();
 
-// scroll lazy loading
-window.addEventListener("scroll", () => {
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {
-    if (renderedCount < allBrands.length) {
-      renderNextBatch();
-    }
-  }
+    filtered = allBrands.filter(b =>
+      b.name.toLowerCase().includes(q)
+    );
+
+    grid.innerHTML = "";
+    index = 0;
+    render();
+  });
+
+  load();
 });
-
-// search
-searchInput.addEventListener("input", (e) => {
-  const q = e.target.value.toLowerCase();
-
-  const filtered = allBrands.filter(b =>
-    b.name.toLowerCase().includes(q)
-  );
-
-  grid.innerHTML = "";
-  renderedCount = 0;
-  allBrands = filtered;
-
-  renderNextBatch();
-});
-
-// старт
-loadBrands();
