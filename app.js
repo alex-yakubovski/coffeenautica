@@ -18,9 +18,6 @@ async function load(file) {
   index = 0;
 
   render();
-
-  // 🔥 ключ: заставляем браузер пересчитать layout ОДИН раз
-  void grid.offsetHeight;
 }
 
 function render() {
@@ -31,18 +28,31 @@ function render() {
   const frag = document.createDocumentFragment();
 
   for (const b of slice) {
-    const a = document.createElement("a");
-    a.className = "card";
-    a.href = b.link;
-    a.target = "_blank";
+    const card = document.createElement("a");
+    card.className = "card";
+    card.href = b.link;
+    card.target = "_blank";
 
-    a.innerHTML = `
-      <img src="${b.icon}">
-      <div class="name">${b.name}</div>
-      <div class="origin">${b.origin}</div>
-    `;
+    const img = document.createElement("img");
 
-    frag.appendChild(a);
+    // 🔥 ключевой фикс
+    img.loading = "eager";
+    img.decoding = "sync";
+    img.src = b.icon;
+
+    const name = document.createElement("div");
+    name.className = "name";
+    name.textContent = b.name;
+
+    const origin = document.createElement("div");
+    origin.className = "origin";
+    origin.textContent = b.origin;
+
+    card.appendChild(img);
+    card.appendChild(name);
+    card.appendChild(origin);
+
+    frag.appendChild(card);
   }
 
   grid.appendChild(frag);
@@ -67,8 +77,6 @@ search.addEventListener("input", (e) => {
   index = 0;
 
   render();
-
-  void grid.offsetHeight;
 });
 
 buttons.forEach(btn => {
