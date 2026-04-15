@@ -5,7 +5,6 @@ const buttons = document.querySelectorAll(".categories button");
 let data = [];
 let filtered = [];
 
-// ---------- LOAD ----------
 async function load(file) {
   const res = await fetch("./brands/" + file);
   data = await res.json();
@@ -15,11 +14,15 @@ async function load(file) {
   render();
 }
 
-// ---------- RENDER ----------
+// ---------- RENDER (САМЫЙ ПРОСТОЙ ВАРИАНТ) ----------
 function render() {
   grid.innerHTML = "";
 
-  for (const b of filtered) {
+  const frag = document.createDocumentFragment();
+
+  for (let i = 0; i < filtered.length; i++) {
+    const b = filtered[i];
+
     const card = document.createElement("a");
     card.className = "card";
     card.href = b.link;
@@ -38,8 +41,10 @@ function render() {
     card.appendChild(name);
     card.appendChild(origin);
 
-    grid.appendChild(card);
+    frag.appendChild(card);
   }
+
+  grid.appendChild(frag);
 }
 
 // ---------- SEARCH ----------
