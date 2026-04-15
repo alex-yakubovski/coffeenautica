@@ -1,47 +1,31 @@
-// ---------- ELEMENTS ----------
-const grid = document.querySelector("#grid");
-const search = document.querySelector("#search");
+// ----- elements -----
+const grid = document.getElementById("grid");
+const search = document.getElementById("search");
 const buttons = document.querySelectorAll(".categories button");
 
-// ---------- STATE ----------
+// ----- state -----
 let original = [];
 let filtered = [];
 
-const BATCH = 60;
-let index = 0;
-
-// ---------- LOAD CATEGORY ----------
+// ----- load json -----
 async function load(file) {
-
   try {
-
     const res = await fetch("./brands/" + file);
     original = await res.json();
     filtered = original;
 
-    grid.innerHTML = "";
-    index = 0;
-
     render();
-
-  } catch (err) {
-
-    console.error("JSON LOAD ERROR:", err);
-
+  } catch (e) {
+    console.error("JSON load error:", e);
   }
-
 }
 
-// ---------- RENDER ----------
+// ----- render -----
 function render() {
 
-  if (!grid) return;
+  grid.innerHTML = "";
 
-  const slice = filtered.slice(index, index + BATCH);
-
-  const frag = document.createDocumentFragment();
-
-  slice.forEach(b => {
+  filtered.forEach(b => {
 
     const card = document.createElement("div");
     card.className = "card";
@@ -54,29 +38,15 @@ function render() {
       </a>
     `;
 
-    frag.appendChild(card);
+    grid.appendChild(card);
 
   });
 
-  grid.appendChild(frag);
-
-  index += BATCH;
-
 }
 
-// ---------- SCROLL LOAD ----------
-window.addEventListener("scroll", () => {
-
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
-    render();
-  }
-
-});
-
-// ---------- SEARCH ----------
+// ----- search -----
 if (search) {
-
-  search.addEventListener("input", (e) => {
+  search.addEventListener("input", e => {
 
     const q = e.target.value.toLowerCase();
 
@@ -84,27 +54,19 @@ if (search) {
       b.name.toLowerCase().includes(q)
     );
 
-    grid.innerHTML = "";
-    index = 0;
-
     render();
 
   });
-
 }
 
-// ---------- CATEGORY BUTTONS ----------
+// ----- category buttons -----
 buttons.forEach(btn => {
 
   btn.addEventListener("click", () => {
-
-    const file = btn.dataset.file;
-
-    load(file);
-
+    load(btn.dataset.file);
   });
 
 });
 
-// ---------- START ----------
+// ----- start -----
 load("chains.json");
