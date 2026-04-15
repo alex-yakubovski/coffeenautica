@@ -7,76 +7,67 @@ let filtered = [];
 const BATCH = 60;
 let index = 0;
 
-// GitHub Pages base (важно)
-const BASE = "/coffeenautica/";
+let currentFile = "chains.json";
 
-// -------- LOAD DATA --------
-async function load() {
-  try {
-    const res = await fetch(BASE + "brands.json");
-    original = await res.json();
+// ---------- LOAD ----------
+async function load(file) {
 
-    filtered = original;
+  currentFile = file;
 
-    // первый рендер сразу
-    render();
+  const res = await fetch("./brands/" + file);
 
-    // сразу подгрузить дальше если экран высокий
-    lazyFill();
-  } catch (e) {
-    console.error("LOAD ERROR:", e);
-  }
+  original = await res.json();
+  filtered = original;
+
+  grid.innerHTML = "";
+  index = 0;
+
+  render();
 }
 
-// -------- RENDER --------
+// ---------- RENDER ----------
 function render() {
-  if (index >= filtered.length) return;
+
+  if(index >= filtered.length) return;
 
   const slice = filtered.slice(index, index + BATCH);
 
   const frag = document.createDocumentFragment();
 
   slice.forEach(b => {
+
     const card = document.createElement("div");
     card.className = "card";
 
     card.innerHTML = `
       <a href="${b.link}" target="_blank" style="text-decoration:none;color:inherit">
-        <img src="${b.icon}" loading="lazy" />
+        <img src="${b.icon}" loading="lazy">
         <div class="name">${b.name}</div>
         <div class="origin">${b.origin}</div>
       </a>
     `;
 
     frag.appendChild(card);
+
   });
 
   grid.appendChild(frag);
+
   index += BATCH;
 }
 
-// -------- AUTO FILL (чтобы не было “пусто пока не скроллишь”) --------
-function lazyFill() {
-  const sentinel = document.getElementById("sentinel");
+// ---------- SCROLL ----------
+window.addEventListener("scroll", () => {
 
-  if (!sentinel) {
-    const el = document.createElement("div");
-    el.id = "sentinel";
-    el.style.height = "1px";
-    document.body.appendChild(el);
-
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        render();
-      }
-    });
-
-    observer.observe(el);
+  if(window.innerHeight + window.scrollY >= document.body.offsetHeight - 200){
+    render();
   }
-}
 
-// -------- SEARCH --------
-search.addEventListener("input", (e) => {
+});
+
+// ---------- SEARCH ----------
+search.addEventListener("input",(e)=>{
+
   const q = e.target.value.toLowerCase();
 
   filtered = original.filter(b =>
@@ -87,8 +78,19 @@ search.addEventListener("input", (e) => {
   index = 0;
 
   render();
-  lazyFill();
+
 });
 
-// -------- START --------
-load();
+// ---------- CATEGORY BUTTONS ----------
+document.querySelectorAll(".categories button").forEach(btn => {
+
+  btn.addEventListener("click", () => {
+
+    load(btn.dataset.file);
+
+  });
+
+});
+
+// ---------- START ----------
+load("chains.json");

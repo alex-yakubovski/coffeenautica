@@ -60,3 +60,20 @@ h1 {
   color: #777;
   margin-top: 4px;
 }
+
+.categories{
+  margin-top:10px;
+}
+
+.categories button{
+  padding:6px 10px;
+  margin:4px;
+  border-radius:8px;
+  border:1px solid #ddd;
+  background:white;
+  cursor:pointer;
+}
+
+.categories button:hover{
+  background:#f2f2f2;
+}
