@@ -19,9 +19,10 @@ async function load(file) {
   index = 0;
 
   render();
+  fixImages();
 }
 
-// ---------- RENDER (ВАЖНО: innerHTML) ----------
+// ---------- RENDER ----------
 function render() {
   if (index >= filtered.length) return;
 
@@ -44,6 +45,19 @@ function render() {
   index += BATCH;
 }
 
+// ---------- FIX IMAGES (КЛЮЧ) ----------
+function fixImages() {
+  requestAnimationFrame(() => {
+    document.querySelectorAll("#grid img").forEach(img => {
+      if (img.complete === false) {
+        const src = img.src;
+        img.src = "";
+        img.src = src;
+      }
+    });
+  });
+}
+
 // ---------- SCROLL ----------
 window.addEventListener("scroll", () => {
   const bottom = window.innerHeight + window.scrollY;
@@ -51,6 +65,7 @@ window.addEventListener("scroll", () => {
 
   if (bottom >= height - 200) {
     render();
+    fixImages();
   }
 });
 
@@ -67,6 +82,7 @@ if (search) {
     index = 0;
 
     render();
+    fixImages();
   });
 }
 
