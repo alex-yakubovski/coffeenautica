@@ -8,76 +8,40 @@ let filtered = [];
 const BATCH = 60;
 let index = 0;
 
-let currentFile = "chains.json";
-
 // ---------- LOAD ----------
 async function load(file) {
-  try {
-    const res = await fetch("./brands/" + file);
-    original = await res.json();
+  const res = await fetch("./brands/" + file);
+  original = await res.json();
 
-    filtered = original;
+  filtered = original;
 
-    grid.innerHTML = "";
-    index = 0;
+  grid.innerHTML = "";
+  index = 0;
 
-    render();
-
-    // 🔥 ВАЖНО: форс пересчёта layout + image pipeline
-    forceReflow();
-
-  } catch (e) {
-    console.error(e);
-  }
+  render();
 }
 
-// ---------- RENDER ----------
+// ---------- RENDER (ВАЖНО: innerHTML) ----------
 function render() {
   if (index >= filtered.length) return;
 
   const slice = filtered.slice(index, index + BATCH);
-  const frag = document.createDocumentFragment();
 
-  slice.forEach(b => {
-    const card = document.createElement("div");
-    card.className = "card";
+  let html = "";
 
-    const img = document.createElement("img");
-    img.src = b.icon;
+  for (const b of slice) {
+    html += `
+      <a class="card" href="${b.link}" target="_blank">
+        <img src="${b.icon}">
+        <div class="name">${b.name}</div>
+        <div class="origin">${b.origin}</div>
+      </a>
+    `;
+  }
 
-    const name = document.createElement("div");
-    name.className = "name";
-    name.textContent = b.name;
+  grid.insertAdjacentHTML("beforeend", html);
 
-    const origin = document.createElement("div");
-    origin.className = "origin";
-    origin.textContent = b.origin;
-
-    const link = document.createElement("a");
-    link.href = b.link;
-    link.target = "_blank";
-    link.style.textDecoration = "none";
-    link.style.color = "inherit";
-
-    link.appendChild(img);
-    link.appendChild(name);
-    link.appendChild(origin);
-    card.appendChild(link);
-
-    frag.appendChild(card);
-  });
-
-  grid.appendChild(frag);
   index += BATCH;
-}
-
-// ---------- FIX (КЛЮЧЕВОЙ) ----------
-function forceReflow() {
-  // заставляем браузер пересчитать layout + images
-  requestAnimationFrame(() => {
-    window.dispatchEvent(new Event("scroll"));
-    window.dispatchEvent(new Event("resize"));
-  });
 }
 
 // ---------- SCROLL ----------
@@ -103,7 +67,6 @@ if (search) {
     index = 0;
 
     render();
-    forceReflow();
   });
 }
 
@@ -115,4 +78,4 @@ buttons.forEach(btn => {
 });
 
 // ---------- START ----------
-load(currentFile);
+load("chains.json");
