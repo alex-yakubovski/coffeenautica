@@ -1,34 +1,41 @@
-const grid = document.getElementById("grid");
-const search = document.getElementById("search");
+// ---------- ELEMENTS ----------
+const grid = document.querySelector("#grid");
+const search = document.querySelector("#search");
+const buttons = document.querySelectorAll(".categories button");
 
+// ---------- STATE ----------
 let original = [];
 let filtered = [];
 
 const BATCH = 60;
 let index = 0;
 
-let currentFile = "chains.json";
-
-// ---------- LOAD ----------
+// ---------- LOAD CATEGORY ----------
 async function load(file) {
 
-  currentFile = file;
+  try {
 
-  const res = await fetch("./brands/" + file);
+    const res = await fetch("./brands/" + file);
+    original = await res.json();
+    filtered = original;
 
-  original = await res.json();
-  filtered = original;
+    grid.innerHTML = "";
+    index = 0;
 
-  grid.innerHTML = "";
-  index = 0;
+    render();
 
-  render();
+  } catch (err) {
+
+    console.error("JSON LOAD ERROR:", err);
+
+  }
+
 }
 
 // ---------- RENDER ----------
 function render() {
 
-  if(index >= filtered.length) return;
+  if (!grid) return;
 
   const slice = filtered.slice(index, index + BATCH);
 
@@ -54,39 +61,46 @@ function render() {
   grid.appendChild(frag);
 
   index += BATCH;
+
 }
 
-// ---------- SCROLL ----------
+// ---------- SCROLL LOAD ----------
 window.addEventListener("scroll", () => {
 
-  if(window.innerHeight + window.scrollY >= document.body.offsetHeight - 200){
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
     render();
   }
 
 });
 
 // ---------- SEARCH ----------
-search.addEventListener("input",(e)=>{
+if (search) {
 
-  const q = e.target.value.toLowerCase();
+  search.addEventListener("input", (e) => {
 
-  filtered = original.filter(b =>
-    b.name.toLowerCase().includes(q)
-  );
+    const q = e.target.value.toLowerCase();
 
-  grid.innerHTML = "";
-  index = 0;
+    filtered = original.filter(b =>
+      b.name.toLowerCase().includes(q)
+    );
 
-  render();
+    grid.innerHTML = "";
+    index = 0;
 
-});
+    render();
+
+  });
+
+}
 
 // ---------- CATEGORY BUTTONS ----------
-document.querySelectorAll(".categories button").forEach(btn => {
+buttons.forEach(btn => {
 
   btn.addEventListener("click", () => {
 
-    load(btn.dataset.file);
+    const file = btn.dataset.file;
+
+    load(file);
 
   });
 
