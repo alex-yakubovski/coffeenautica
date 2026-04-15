@@ -5,25 +5,30 @@ const buttons = document.querySelectorAll(".categories button");
 let data = [];
 let filtered = [];
 
+// ---------- LOAD ----------
 async function load(file) {
-  const res = await fetch("./brands/" + file);
-  const json = await res.json();
+  try {
+    console.log("LOAD START");
 
-  // 🔥 ЖЁСТКАЯ проверка данных
-  if (!Array.isArray(json)) {
-    console.error("JSON IS NOT ARRAY:", json);
-    return;
+    const res = await fetch("./brands/" + file);
+    data = await res.json();
+
+    console.log("TOTAL ITEMS:", data.length);
+
+    filtered = data;
+
+    render();
+
+    console.log("LOAD END");
+  } catch (e) {
+    console.error("LOAD ERROR:", e);
   }
-
-  data = json;
-  filtered = json;
-
-  console.log("TOTAL ITEMS:", data.length);
-
-  render();
 }
 
+// ---------- RENDER ----------
 function render() {
+  console.log("RENDER START");
+
   grid.innerHTML = "";
 
   const frag = document.createDocumentFragment();
@@ -31,8 +36,10 @@ function render() {
   for (let i = 0; i < filtered.length; i++) {
     const b = filtered[i];
 
-    // 🔥 защита от битых элементов
-    if (!b || !b.name || !b.icon) continue;
+    if (!b) {
+      console.log("SKIP BROKEN ITEM:", i);
+      continue;
+    }
 
     const card = document.createElement("a");
     card.className = "card";
@@ -40,12 +47,14 @@ function render() {
     card.target = "_blank";
 
     const img = document.createElement("img");
-    img.src = b.icon;
+    img.src = b.icon || "";
 
     const name = document.createElement("div");
-    name.textContent = b.name;
+    name.className = "name";
+    name.textContent = b.name || "NO NAME";
 
     const origin = document.createElement("div");
+    origin.className = "origin";
     origin.textContent = b.origin || "";
 
     card.appendChild(img);
@@ -57,23 +66,28 @@ function render() {
 
   grid.appendChild(frag);
 
-  console.log("RENDER DONE:", frag.children.length);
+  console.log("RENDER END:", filtered.length);
 }
 
-search?.addEventListener("input", (e) => {
-  const q = e.target.value.toLowerCase();
+// ---------- SEARCH ----------
+if (search) {
+  search.addEventListener("input", (e) => {
+    const q = e.target.value.toLowerCase();
 
-  filtered = data.filter(b =>
-    (b.name || "").toLowerCase().includes(q)
-  );
+    filtered = data.filter(b =>
+      (b.name || "").toLowerCase().includes(q)
+    );
 
-  render();
-});
+    render();
+  });
+}
 
+// ---------- CATEGORY ----------
 buttons.forEach(btn => {
   btn.addEventListener("click", () => {
     load(btn.dataset.file);
   });
 });
 
+// ---------- START ----------
 load("chains.json");
