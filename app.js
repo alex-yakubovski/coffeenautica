@@ -48,7 +48,7 @@ function render() {
 
     card.innerHTML = `
       <a href="${b.link}" target="_blank" style="text-decoration:none;color:inherit">
-        <img src="${b.icon}" loading="lazy">
+        <img src="${b.icon}">
         <div class="name">${b.name}</div>
         <div class="origin">${b.origin}</div>
       </a>
