@@ -19,7 +19,9 @@ async function load(file) {
   index = 0;
 
   render();
-  fixImages();
+
+  // 🔥 ВАЖНО: форс decode после первого рендера
+  requestAnimationFrame(decodeImages);
 }
 
 // ---------- RENDER ----------
@@ -45,16 +47,15 @@ function render() {
   index += BATCH;
 }
 
-// ---------- FIX IMAGES (КЛЮЧ) ----------
-function fixImages() {
-  requestAnimationFrame(() => {
-    document.querySelectorAll("#grid img").forEach(img => {
-      if (img.complete === false) {
-        const src = img.src;
-        img.src = "";
-        img.src = src;
-      }
-    });
+// ---------- FIX (КЛЮЧЕВОЙ МОМЕНТ) ----------
+function decodeImages() {
+  const imgs = document.querySelectorAll("#grid img");
+
+  imgs.forEach(img => {
+    // принудительно запускаем decode pipeline
+    if (img.decode) {
+      img.decode().catch(() => {});
+    }
   });
 }
 
@@ -65,7 +66,9 @@ window.addEventListener("scroll", () => {
 
   if (bottom >= height - 200) {
     render();
-    fixImages();
+
+    // снова форсим decode
+    requestAnimationFrame(decodeImages);
   }
 });
 
@@ -82,7 +85,7 @@ if (search) {
     index = 0;
 
     render();
-    fixImages();
+    requestAnimationFrame(decodeImages);
   });
 }
 
