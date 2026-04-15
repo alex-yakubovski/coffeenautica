@@ -1,93 +1,47 @@
 const grid = document.getElementById("grid");
 const search = document.getElementById("search");
-const buttons = document.querySelectorAll(".categories button");
 
-let data = [];
-let filtered = [];
+let allItems = [];
 
-// ---------- LOAD ----------
 async function load(file) {
-  try {
-    console.log("LOAD START");
+  const res = await fetch(file);
+  const data = await res.json();
 
-    const res = await fetch("./brands/" + file);
-    data = await res.json();
-
-    console.log("TOTAL ITEMS:", data.length);
-
-    filtered = data;
-
-    render();
-
-    console.log("LOAD END");
-  } catch (e) {
-    console.error("LOAD ERROR:", e);
-  }
+  allItems = data;
+  render(allItems);
 }
 
-// ---------- RENDER ----------
-function render() {
-  console.log("RENDER START");
-
+function render(items) {
   grid.innerHTML = "";
 
-  const frag = document.createDocumentFragment();
+  const html = items.map(b => `
+    <a class="card" href="${b.url}" target="_blank">
+      <img src="https://www.google.com/s2/favicons?domain=${b.domain}&sz=64">
+      <div class="name">${b.name}</div>
+      <div class="country">${b.country}</div>
+    </a>
+  `).join("");
 
-  for (let i = 0; i < filtered.length; i++) {
-    const b = filtered[i];
+  grid.innerHTML = html;
 
-    if (!b) {
-      console.log("SKIP BROKEN ITEM:", i);
-      continue;
-    }
-
-    const card = document.createElement("a");
-    card.className = "card";
-    card.href = b.link || "#";
-    card.target = "_blank";
-
-    const img = document.createElement("img");
-    img.src = b.icon || "";
-
-    const name = document.createElement("div");
-    name.className = "name";
-    name.textContent = b.name || "NO NAME";
-
-    const origin = document.createElement("div");
-    origin.className = "origin";
-    origin.textContent = b.origin || "";
-
-    card.appendChild(img);
-    card.appendChild(name);
-    card.appendChild(origin);
-
-    frag.appendChild(card);
-  }
-
-  grid.appendChild(frag);
-
-  console.log("RENDER END:", filtered.length);
+  console.log("RENDER DONE:", items.length);
 }
 
-// ---------- SEARCH ----------
-if (search) {
-  search.addEventListener("input", (e) => {
-    const q = e.target.value.toLowerCase();
+search.addEventListener("input", (e) => {
+  const q = e.target.value.toLowerCase();
 
-    filtered = data.filter(b =>
-      (b.name || "").toLowerCase().includes(q)
-    );
+  const filtered = allItems.filter(b =>
+    b.name.toLowerCase().includes(q)
+  );
 
-    render();
-  });
-}
+  render(filtered);
+});
 
-// ---------- CATEGORY ----------
-buttons.forEach(btn => {
+document.querySelectorAll(".categories button").forEach(btn => {
   btn.addEventListener("click", () => {
     load(btn.dataset.file);
   });
 });
 
-// ---------- START ----------
+// 🔥 ВАЖНО: старт
 load("chains.json");
