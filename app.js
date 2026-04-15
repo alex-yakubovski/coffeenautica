@@ -10,11 +10,9 @@ let index = 0;
 
 let currentFile = "chains.json";
 
-// ---------- LOAD CATEGORY ----------
+// ---------- LOAD ----------
 async function load(file) {
   try {
-    currentFile = file;
-
     const res = await fetch("./brands/" + file);
     original = await res.json();
 
@@ -25,18 +23,19 @@ async function load(file) {
 
     render();
 
-  } catch (err) {
-    console.error("LOAD ERROR:", err);
+    // 🔥 ВАЖНО: форс пересчёта layout + image pipeline
+    forceReflow();
+
+  } catch (e) {
+    console.error(e);
   }
 }
 
 // ---------- RENDER ----------
 function render() {
-  if (!grid) return;
   if (index >= filtered.length) return;
 
   const slice = filtered.slice(index, index + BATCH);
-
   const frag = document.createDocumentFragment();
 
   slice.forEach(b => {
@@ -45,7 +44,6 @@ function render() {
 
     const img = document.createElement("img");
     img.src = b.icon;
-    img.loading = "eager"; // важно: убрали lazy, чтобы не было багов
 
     const name = document.createElement("div");
     name.className = "name";
@@ -64,8 +62,8 @@ function render() {
     link.appendChild(img);
     link.appendChild(name);
     link.appendChild(origin);
-
     card.appendChild(link);
+
     frag.appendChild(card);
   });
 
@@ -73,7 +71,16 @@ function render() {
   index += BATCH;
 }
 
-// ---------- SCROLL (SIMPLE + STABLE) ----------
+// ---------- FIX (КЛЮЧЕВОЙ) ----------
+function forceReflow() {
+  // заставляем браузер пересчитать layout + images
+  requestAnimationFrame(() => {
+    window.dispatchEvent(new Event("scroll"));
+    window.dispatchEvent(new Event("resize"));
+  });
+}
+
+// ---------- SCROLL ----------
 window.addEventListener("scroll", () => {
   const bottom = window.innerHeight + window.scrollY;
   const height = document.body.offsetHeight;
@@ -96,10 +103,11 @@ if (search) {
     index = 0;
 
     render();
+    forceReflow();
   });
 }
 
-// ---------- CATEGORY SWITCH ----------
+// ---------- CATEGORY ----------
 buttons.forEach(btn => {
   btn.addEventListener("click", () => {
     load(btn.dataset.file);
