@@ -1,12 +1,8 @@
 const grid = document.getElementById("grid");
 const search = document.getElementById("search");
-const buttons = document.querySelectorAll(".categories button");
 
 let original = [];
 let filtered = [];
-
-const BATCH = 60;
-let index = 0;
 
 async function load(file) {
   const res = await fetch("./brands/" + file);
@@ -15,38 +11,28 @@ async function load(file) {
   filtered = original;
 
   grid.innerHTML = "";
-  index = 0;
-
-  render();
+  renderAll();
 }
 
-function render() {
-  if (index >= filtered.length) return;
-
-  const slice = filtered.slice(index, index + BATCH);
-
+function renderAll() {
   const frag = document.createDocumentFragment();
 
-  for (const b of slice) {
+  for (const b of filtered) {
     const card = document.createElement("a");
     card.className = "card";
     card.href = b.link;
     card.target = "_blank";
 
     const img = document.createElement("img");
-
-    // 🔥 ключевой фикс
-    img.loading = "eager";
-    img.decoding = "sync";
     img.src = b.icon;
 
     const name = document.createElement("div");
-    name.className = "name";
     name.textContent = b.name;
+    name.className = "name";
 
     const origin = document.createElement("div");
-    origin.className = "origin";
     origin.textContent = b.origin;
+    origin.className = "origin";
 
     card.appendChild(img);
     card.appendChild(name);
@@ -56,15 +42,7 @@ function render() {
   }
 
   grid.appendChild(frag);
-
-  index += BATCH;
 }
-
-window.addEventListener("scroll", () => {
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
-    render();
-  }
-});
 
 search.addEventListener("input", (e) => {
   const q = e.target.value.toLowerCase();
@@ -74,15 +52,7 @@ search.addEventListener("input", (e) => {
   );
 
   grid.innerHTML = "";
-  index = 0;
-
-  render();
-});
-
-buttons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    load(btn.dataset.file);
-  });
+  renderAll();
 });
 
 load("chains.json");
