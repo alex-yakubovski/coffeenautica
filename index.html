@@ -1,58 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COFFEENAUTICA | Scroll & Taste</title>
     <style>
-        body, html { margin: 0; padding: 0; background: #000; font-family: sans-serif; }
-        
-        /* ШАПКА */
-        header { 
-            height: 100vh; 
-            display: flex; flex-direction: column; 
-            justify-content: center; align-items: center; 
-            text-align: center; color: #fff;
+        :root {
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --gold: #d4af37;
         }
-        h1 { font-size: 4rem; margin: 0; letter-spacing: -2px; }
-        .tagline { font-size: 1.2rem; text-transform: uppercase; letter-spacing: 5px; color: #d4af37; }
-        .sub-tagline { font-size: 0.8rem; letter-spacing: 8px; color: #666; margin-top: 10px; }
 
-        /* СЕТКА (2 колонки для мобилок по умолчанию) */
+        body, html {
+            margin: 0; padding: 0;
+            background-color: #000;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        /* ШАПКА */
+        .hero {
+            height: 100vh;
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            text-align: center;
+            background: radial-gradient(circle, #2c1b18 0%, #000 100%);
+        }
+        h1 { font-size: clamp(2rem, 8vw, 4rem); margin: 0; font-weight: 900; letter-spacing: -2px; }
+        .tagline { font-size: 1.2rem; text-transform: uppercase; letter-spacing: 5px; color: var(--gold); margin: 10px 0 0; }
+        .sub-tagline { font-size: 0.8rem; letter-spacing: 7px; color: #666; font-weight: 300; }
+
+        /* ОБЩИЕ СТИЛИ СЕКЦИЙ */
+        section {
+            padding: 50px 20px;
+            background-size: cover;
+            background-attachment: fixed; /* Эффект параллакса */
+            background-position: center;
+            /* Магия 2026 года: не рендерит то, что вне экрана */
+            content-visibility: auto;
+            contain-intrinsic-size: 1000px; 
+        }
+
+        .world-title {
+            text-align: center; font-size: 2rem; margin-bottom: 40px;
+            text-transform: uppercase; letter-spacing: 10px; color: rgba(255,255,255,0.5);
+        }
+
         .wall-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px; padding: 10px;
+            grid-template-columns: repeat(2, 1fr); /* Мобилка по умолчанию */
+            gap: 15px; max-width: 1400px; margin: 0 auto;
         }
 
-        /* ДЕСКТОП: 6 колонок */
         @media (min-width: 1024px) {
-            .wall-grid { grid-template-columns: repeat(6, 1fr); gap: 20px; padding: 40px; }
+            .wall-grid { grid-template-columns: repeat(6, 1fr); gap: 25px; }
         }
 
+        /* КАРТОЧКА БРЕНДА */
         .brand-card {
             aspect-ratio: 1/1;
-            background: rgba(255,255,255,0.05);
+            background: var(--card-bg);
             border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(5px);
             display: flex; flex-direction: column;
             align-items: center; justify-content: center;
+            transition: 0.3s ease;
+        }
+        .brand-card:hover { border-color: var(--gold); transform: scale(1.05); background: rgba(255,255,255,0.1); }
+
+        /* ЛОГОТИПЫ ЧЕРЕЗ СПРАЙТЫ */
+        .logo {
+            width: 100px; height: 100px;
+            background-size: 3000px 2000px; /* Пример размера атласа из 300 лого */
+            filter: grayscale(1) brightness(2);
             transition: 0.3s;
         }
-        .brand-card:hover { border-color: #d4af37; transform: scale(1.03); }
-        .brand-name { color: #888; font-size: 10px; margin-top: 10px; text-transform: uppercase; }
+        .brand-card:hover .logo { filter: grayscale(0) brightness(1); }
+
+        /* СПЕЦИФИКАЦИЯ МИРОВ (СЮДА КЛАДЕМ ФОНЫ ИЗ MJ) */
+        #world-1 { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('mj-world1.webp'); }
+        #world-2 { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('mj-world2.webp'); }
+        #world-3 { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('mj-world3.webp'); }
+
+        /* ПРИМЕР КООРДИНАТ ДЛЯ ЛОГОТИПОВ МИРА №1 */
+        .w1-logo { background-image: url('atlas-world1.webp'); }
+        .b1 { background-position: 0 0; }
+        .b2 { background-position: -100px 0; }
+        .b3 { background-position: -200px 0; }
     </style>
 </head>
 <body>
 
-<header>
+<header class="hero">
     <h1>COFFEENAUTICA</h1>
-    <p class="tagline">Scroll & Taste</p>
+    <p class="tagline">Scroll <span>&</span> Taste</p>
     <p class="sub-tagline">discover universe</p>
 </header>
 
-<section id="giants">
+<section id="world-1">
+    <h2 class="world-title">The Giants</h2>
     <div class="wall-grid">
-        <div class="brand-card"><div class="logo"></div><span class="brand-name">Starbucks</span></div>
-        <div class="brand-card"><div class="logo"></div><span class="brand-name">Lavazza</span></div>
+        <div class="brand-card"><div class="logo w1-logo b1"></div><span class="brand-name">Starbucks</span></div>
+        <div class="brand-card"><div class="logo w1-logo b2"></div><span class="brand-name">Lavazza</span></div>
+        <div class="brand-card"><div class="logo w1-logo b3"></div><span class="brand-name">Illy</span></div>
+        </div>
+</section>
+
+<section id="world-2">
+    <h2 class="world-title">Old Europe</h2>
+    <div class="wall-grid">
+        </div>
+</section>
+
+<section id="world-3">
+    <h2 class="world-title">Third Wave</h2>
+    <div class="wall-grid">
         </div>
 </section>
 
