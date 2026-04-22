@@ -70,10 +70,17 @@
 
         /* ЛОГОТИПЫ ЧЕРЕЗ СПРАЙТЫ */
         .logo {
-            width: 100px; height: 100px;
-            background-size: 3000px 2000px; /* Пример размера атласа из 300 лого */
+          
+            width: 200px; /* Твой размер из Birme */
+            height: 200px;
+            background-repeat: no-repeat; /* Убираем жесткий background-size, если ты делал спрайт-столбик */ /* Если это столбик, ширина подхватится сама */
             filter: grayscale(1) brightness(2);
             transition: 0.3s;
+    
+            /* Масштабируем логотип под карточку, если карточка меньше 200px */
+            transform: scale(0.6); /* Немного уменьшим, чтобы вписалось в сетку */
+
+
         }
         .brand-card:hover .logo { filter: grayscale(0) brightness(1); }
 
@@ -83,10 +90,11 @@
         #world-3 { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('mj-world3.webp'); }
 
         /* ПРИМЕР КООРДИНАТ ДЛЯ ЛОГОТИПОВ МИРА №1 */
-        .w1-logo { background-image: url('atlas-world1.webp'); }
+        .w1-logo { background-image: url('logos/1_logos.webp'); }
         .b1 { background-position: 0 0; }
-        .b2 { background-position: -100px 0; }
-        .b3 { background-position: -200px 0; }
+        .b2 { background-position: 0 -200px; }
+        .b3 { background-position: 0 -400px; }
+        /* ...и так далее до .b80 { background-position: 0 -15800px; } */
 
         /* СТИЛИ РЕКЛАМНОГО БАННЕРА ВНУТРИ СЕТКИ */
         .ad-nest {
@@ -164,7 +172,53 @@
 </section>
 
 <section id="world-3">
-    <h2 class="world-title">Third Wave</h2>
+    <h2 class="world-title">New World</h2>
+    <div class="wall-grid">
+        </div>
+</section>
+
+<!-- Крафт. Здесь качество важнее количества. Это «элита», за которой охотятся кофеманы. -->
+<section id="world-4">
+    <h2 class="world-title">The Third Wave</h2>
+    <div class="wall-grid">
+        </div>
+</section>
+
+<section id="world-5">
+    <h2 class="world-title">Latin Spirit</h2>
+    <div class="wall-grid">
+        </div>
+</section>
+
+<section id="world-6">
+    <h2 class="world-title">The Orient & Asia</h2>
+    <div class="wall-grid">
+        </div>
+</section>
+
+<section id="world-7">
+    <h2 class="world-title">African Origins</h2>
+    <div class="wall-grid">
+        </div>
+</section>
+
+<!-- Кофемашины, мельницы, фильтры. Неожиданный и необходимый перерыв в скролле -->
+<section id="world-8">
+    <h2 class="world-title">Tech & Gear</h2>
+    <div class="wall-grid">
+        </div>
+</section>
+
+<!-- НИША. Биохакинг, грибной кофе, супер-крепкие сорта. Узкая, но дорогая ниша. -->
+<section id="world-9">
+    <h2 class="world-title">Alternative & Dark</h2>
+    <div class="wall-grid">
+        </div>
+</section>
+
+<!-- Лабораторные стартапы и ИИ-проекты. Самый короткий, но самый «хайповый» финал. -->
+<section id="world-10">
+    <h2 class="world-title">The Future</h2>
     <div class="wall-grid">
         </div>
 </section>
