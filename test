@@ -1,0 +1,28 @@
+
+
+       /* ЛОГОТИПЫ ЧЕРЕЗ СПРАЙТЫ */
+        .logo {
+          
+            width: 140px; 
+            height: 140px;
+            background-repeat: no-repeat; 
+            filter: grayscale(1) brightness(2);
+            transition: 0.3s;
+            background-size: 140px auto; /* Ширина спрайта совпадает с шириной блока */
+            transform: none; /* Никаких скейлов */
+            background-origin: padding-box; 
+            margin: 0px;
+            padding: 0px;
+            /* Центрируем лого внутри, чтобы оно не прилипало к верху */
+            background-position-x: center;
+            transform-origin: center;
+
+            filter: grayscale(1) drop-shadow(0 0 1px rgba(255,255,255,0.5));
+        }
+
+
+
+                /* СПЕЦИФИКАЦИЯ МИРОВ (СЮДА КЛАДЕМ ФОНЫ ИЗ MJ) */
+        #world-1 { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('mj-world1.webp'); }
+        #world-2 { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('mj-world2.webp'); }
+        #world-3 { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('mj-world3.webp'); }
