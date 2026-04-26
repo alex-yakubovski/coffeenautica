@@ -86,7 +86,7 @@
     filter: grayscale(1);
     opacity: 0.4; 
     transition: 0.3s ease;
-    
+    background-position-x: center !important;
     margin: 0;
     padding: 0;
 }
@@ -103,7 +103,12 @@
 #world-1 .logo { background-image: url('logos/1_logos.webp'); }
 #world-2 .logo { background-image: url('logos/2_logos.webp'); }
 #world-3 .logo { background-image: url('logos/3_logos.webp'); }
-
+/* Фикс для второго мира с нестандартной шириной */
+#world-2 .logo {
+    background-image: url('logos/2_logos.webp');
+    background-size: 220px auto; /* Возвращаем родной размер */
+    background-position-x: center !important;
+}
 
 /* НАДПИСИ под ЛОГО*/
 .brand-name {
