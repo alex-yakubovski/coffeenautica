@@ -1,3 +1,3 @@
 1. https://bulkresizephotos.com/ - Загоняем логотипы из Гугл Серч туда и получаем на выходе: 200х200 .webp
-2. https://instantsprite.com/
+2. https://www.toptal.com/developers/css/sprite-generator
 3. https://picflow.com/convert/png-to-webp - png to webp
