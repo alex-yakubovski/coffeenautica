@@ -83,9 +83,9 @@
     background-attachment: scroll;
     background-origin: border-box;
     /* Фикс видимости: вместо выжигания яркостью используем прозрачность */
-    filter: grayscale(1);
+    filter: grayscale(0.4) saturate(0.6) brightness(0.9);
     opacity: 0.4; 
-    transition: 0.3s ease;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     background-position-x: center !important;
     margin: 0;
     padding: 0;
@@ -93,9 +93,9 @@
 
 /* ЭФФЕКТ ПРИ НАВЕДЕНИИ */
 .brand-card:hover .logo { 
-    filter: grayscale(0);
+    filter: grayscale(0) saturate(1) brightness(1);
     opacity: 1;
-    transform: scale(1.02); /* Легкий акцент вместо сильного скейла */
+    transform: scale(1.05); /* Легкий акцент вместо сильного скейла */
 }
 
 /* ПРИВЯЗКА СПРАЙТОВ К МИРАМ */
