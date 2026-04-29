@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{brand} | Coffee Atlas by Coffenautica</title>
+    <style>
+        body {{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #fff; }}
+        header {{ text-align: center; padding: 40px 0; border-bottom: 1px solid #eee; }}
+        .brand-title {{ font-size: 3rem; color: #4b3022; margin: 0; }}
+        .content-section {{ padding: 30px 0; }}
+        .description {{ font-size: 1.2rem; color: #555; margin-bottom: 30px; }}
+        
+        /* Стили для кнопок Амазон/eBay */
+        .marketplace-links {{ display: flex; gap: 20px; margin: 30px 0; flex-wrap: wrap; }}
+        .buy-btn {{ flex: 1; min-width: 200px; padding: 15px 25px; text-align: center; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.3s; }}
+        .amazon-btn {{ background-color: #FF9900; color: #000; }}
+        .ebay-btn {{ background-color: #0053D6; color: #fff; }}
+        .buy-btn:hover {{ opacity: 0.8; transform: translateY(-2px); }}
+
+        /* Блок для владельцев брендов */
+        .brand-owner-box {{ margin: 40px 0; padding: 20px; border: 1px dashed #6F4E37; border-radius: 12px; background-color: #fffaf5; text-align: center; }}
+        .brand-owner-box a {{ color: #6F4E37; font-weight: bold; }}
+
+        /* Улучшенный футер */
+        footer {{ margin-top: 80px; padding: 40px 20px; background-color: #f9f9f9; border-top: 1px solid #eee; text-align: center; }}
+        .footer-nav {{ margin-bottom: 25px; }}
+        .footer-nav a {{ margin: 0 15px; color: #333; text-decoration: none; font-weight: 600; font-size: 14px; }}
+        .legal-text {{ max-width: 800px; margin: 0 auto; line-height: 1.8; color: #888; font-size: 11px; }}
+        .legal-tag {{ color: #555; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; display: block; margin-top: 10px; }}
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="/" style="text-decoration: none; color: #999;">← Back to Coffee Atlas</a>
+        <h1 class="brand-title">{brand}</h1>
+    </header>
+
+    <main class="content-section">
+        <div class="description">
+            {description}
+        </div>
+
+        <div class="marketplace-links">
+            <a href="{amazon_url}" target="_blank" class="buy-btn amazon-btn">View {brand} on Amazon</a>
+            <a href="{ebay_url}" target="_blank" class="buy-btn ebay-btn">Find {brand} on eBay</a>
+        </div>
+
+        <!-- Claim Page Block -->
+        <div class="brand-owner-box">
+            <p style="margin: 0; font-size: 14px; color: #555;">
+                <strong>Are you the owner of {brand}?</strong><br>
+                Verify your brand, update information, or manage your presence in our atlas. 
+                <br><a href="/contact.html">Claim this page</a> | <a href="/contact.html" style="color: #999; font-weight: normal;">Request removal</a>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-nav">
+            <a href="/about.html">About Us</a>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        
+        <div class="legal-text">
+            <span class="legal-tag">Disclaimer</span>
+            This website is a specialized informational and advertising resource. We do not sell any products directly and are not a store. All brand names, logos, and trademarks are the property of their respective owners. Our "Coffee Atlas" project on <strong>Coffenautica.com</strong> is for educational and research purposes only.
+
+            <span class="legal-tag">Affiliate Disclosure</span>
+            As an Amazon Associate, I earn from qualifying purchases. This site also participates in the eBay Partner Network and may earn commissions from links to eBay.com. This does not affect the price you pay as a consumer.
+
+            <p style="border-top: 1px solid #ddd; margin-top: 20px; padding-top: 20px; color: #bbb;">
+                &copy; 2026 <strong>Coffenautica.com</strong>. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
