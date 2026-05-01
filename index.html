@@ -59,24 +59,25 @@
 /* Описание в шапке */
 
 .hero-desc {
-    max-width: 650px;
+    max-width: 750px;
     margin: 35px auto 0;
-    /* Playfair Display — это и есть тот самый "необычный" и четкий стиль */
-    font-family: 'Playfair Display', serif;
-    font-size: 18px; /* Немного увеличим для легкости чтения */
-    line-height: 1.6;
-    color: #999;
-    font-style: italic; /* Настоящий художественный курсив */
-    letter-spacing: 0.3px; /* Убираем лишний разброс букв */
-    opacity: 0.9;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px; /* Уменьшаем размер для изящности */
+    line-height: 2;   /* Увеличиваем межстрочный интервал */
+    color: #888;
+    
+    text-transform: uppercase; /* Тот самый рубленный стиль */
+    letter-spacing: 4px;       /* Ключевой параметр для "необычности" */
+    font-weight: 300;          /* Тонкое начертание */
+    
+    opacity: 0.7;
+    text-align: center;
 }
 
 .hero-desc strong {
     color: var(--gold);
-    font-weight: 500;
-    /* Убираем тени, чтобы буквы были максимально четкими */
-    text-shadow: none; 
-    border-bottom: 1px solid rgba(212, 175, 55, 0.3); /* Тонкое подчеркивание вместо свечения */
+    font-weight: 700;
+    letter-spacing: 5px; /* Акцент на важных словах */
 }
 
         /* КАРТОЧКА БРЕНДА */
