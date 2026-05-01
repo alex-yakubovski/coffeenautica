@@ -6,11 +6,13 @@
     <title>{brand} | Coffee Atlas by Coffenautica</title>
     <style>
         :root {
-            --bg-color: #2b2d24; /* Тактический оливковый */
-            --card-bg: #35382d; /* Чуть светлее для блоков */
-            --text-main: #d1d1c1; /* Крем-брюле для чтения */
+            /* Подняли яркость: теперь это точно оливковый, а не черный */
+            --bg-color: #4a4e40; 
+            --card-bg: #565b4a; 
+            --text-main: #f0f0e4; 
             --accent-gold: #d4af37;
-            --bracket-color: #5a5e4a;
+            --bracket-color: #6b705c;
+            --footer-bg: #3e4135;
         }
 
         body { 
@@ -35,15 +37,14 @@
             margin: 0; 
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-weight: 800;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
 
         .content-section { padding: 40px 0; }
 
-        /* Оформление в технические скобки */
         .description { 
             font-size: 1.15rem; 
-            color: #b5b5a7; 
+            color: #e0e0d0; 
             margin-bottom: 30px; 
             position: relative;
             padding: 20px 50px;
@@ -67,12 +68,13 @@
             text-transform: uppercase;
             font-size: 13px;
             letter-spacing: 1px;
+            border: 1px solid rgba(0,0,0,0.1);
         }
 
         .amazon-btn { background-color: #FF9900; color: #000; }
         .ebay-btn { background-color: #0053D6; color: #fff; }
 
-        .buy-btn:hover { filter: brightness(1.1); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .buy-btn:hover { filter: brightness(1.1); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
 
         .brand-owner-box { 
             margin: 50px 0; 
@@ -80,36 +82,36 @@
             border: 1px solid var(--bracket-color); 
             background-color: var(--card-bg); 
             text-align: center; 
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.05);
         }
         
-        .brand-owner-box a { color: var(--accent-gold); font-weight: bold; text-decoration: none; }
+        .brand-owner-box a { color: var(--accent-gold); font-weight: bold; text-decoration: none; border-bottom: 1px solid var(--accent-gold); }
 
         footer { 
             margin-top: 80px; 
             padding: 50px 20px; 
-            background-color: #21231c; 
+            background-color: var(--footer-bg); 
             border-top: 1px solid var(--bracket-color); 
             text-align: center; 
         }
 
         .footer-nav a { 
             margin: 0 15px; 
-            color: #6a6e5a; 
+            color: #a0a590; 
             text-decoration: none; 
             font-weight: 600; 
             font-size: 12px; 
             text-transform: uppercase;
         }
-        .footer-nav a:hover { color: var(--accent-gold); }
 
-        .legal-text { max-width: 800px; margin: 0 auto; line-height: 1.8; color: #5a5e4a; font-size: 11px; }
-        .legal-tag { color: #7a7e6a; font-weight: bold; text-transform: uppercase; display: block; margin-top: 10px; }
+        .legal-text { max-width: 800px; margin: 0 auto; line-height: 1.8; color: #8a8e7a; font-size: 11px; }
+        .legal-tag { color: #a0a590; font-weight: bold; text-transform: uppercase; display: block; margin-top: 10px; }
     </style>
 </head>
 <body>
 
     <header>
-        <a href="/" style="text-decoration: none; color: #5a5e4a; font-size: 11px; letter-spacing: 2px;">← BACK TO GLOBAL SYSTEM</a>
+        <a href="/" style="text-decoration: none; color: var(--bracket-color); font-size: 11px; letter-spacing: 2px;">← BACK TO GLOBAL SYSTEM</a>
         <h1 class="brand-title">{brand}</h1>
     </header>
 
@@ -124,10 +126,10 @@
         </div>
 
         <div class="brand-owner-box">
-            <p style="margin: 0; font-size: 14px; color: #8a8e7a;">
+            <p style="margin: 0; font-size: 14px; color: #d1d1c1;">
                 <strong>System Ownership Notice</strong><br>
                 Are you the official representative of {brand}?<br>
-                <a href="/contact.html">Claim this profile</a> | <a href="/contact.html" style="color: #5a5e4a; font-weight: normal;">Request removal</a>
+                <a href="/contact.html">Claim this profile</a> | <a href="/contact.html" style="color: var(--bracket-color); font-weight: normal; border: none;">Request removal</a>
             </p>
         </div>
     </main>
@@ -146,7 +148,7 @@
             <span class="legal-tag">Affiliate Disclosure</span>
             As an Amazon Associate, we earn from qualifying purchases. This site also participates in the eBay Partner Network and may earn commissions from links to eBay.com. This does not affect the price you pay as a consumer.
 
-            <p style="border-top: 1px solid #35382d; margin-top: 20px; padding-top: 20px; color: #4a4e3a;">
+            <p style="border-top: 1px solid var(--card-bg); margin-top: 20px; padding-top: 20px; color: #6b705c;">
                 &copy; 2026 <strong>Coffeenautica.com</strong>. All rights reserved.
             </p>
         </div>
