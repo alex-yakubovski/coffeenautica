@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{brand} | Coffee Atlas by Coffenautica</title>
     <style>
-        /* Переменные для быстрой правки цветов */
         :root {
-            --bg-color: #0a0a0a;
-            --card-bg: #111111;
-            --text-main: #cccccc;
-            --text-dim: #888888;
-            --accent-gold: #d4af37; /* Тот самый золотой из главной */
-            --accent-brown: #8b5e3c; /* Адаптированный коричневый */
+            --bg-color: #f4f4f4; /* Светло-серый, комфортный для глаз */
+            --card-bg: #ffffff;
+            --text-main: #222222;
+            --text-dim: #555555;
+            --accent-brown: #4b3022; /* Твой оригинальный коричневый */
+            --bracket-color: #999999;
         }
 
         body { 
@@ -28,28 +27,32 @@
         header { 
             text-align: center; 
             padding: 40px 0; 
-            border-bottom: 1px solid #222; 
+            border-bottom: 1px solid #ddd; 
         }
 
         .brand-title { 
             font-size: 3rem; 
-            color: var(--accent-gold); 
+            color: var(--accent-brown); 
             margin: 0; 
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         .content-section { padding: 30px 0; }
 
+        /* Вместо палочки слева — оформление в скобки */
         .description { 
-            font-size: 1.2rem; 
+            font-size: 1.1rem; 
             color: var(--text-dim); 
             margin-bottom: 30px; 
-            border-left: 2px solid var(--accent-brown);
-            padding-left: 20px;
+            position: relative;
+            padding: 20px 40px;
+            text-align: justify;
         }
+
+        .description::before { content: '['; position: absolute; left: 0; top: 0; font-size: 3rem; color: var(--bracket-color); font-weight: 100; }
+        .description::after { content: ']'; position: absolute; right: 0; bottom: 0; font-size: 3rem; color: var(--bracket-color); font-weight: 100; }
         
-        /* Стили для кнопок */
         .marketplace-links { display: flex; gap: 20px; margin: 30px 0; flex-wrap: wrap; }
         
         .buy-btn { 
@@ -58,86 +61,58 @@
             padding: 15px 25px; 
             text-align: center; 
             text-decoration: none; 
-            border-radius: 4px; /* Сделал чуть острее, чем 8px */
+            border-radius: 4px;
             font-weight: bold; 
             transition: 0.3s; 
             text-transform: uppercase;
             font-size: 13px;
-            letter-spacing: 1px;
         }
 
-        .amazon-btn { 
-            background-color: transparent; 
-            color: #FF9900; 
-            border: 1px solid #FF9900;
-        }
-        
-        .ebay-btn { 
-            background-color: transparent; 
-            color: #0053D6; 
-            border: 1px solid #0053D6;
-        }
+        .amazon-btn { background-color: #FF9900; color: #000; }
+        .ebay-btn { background-color: #0053D6; color: #fff; }
 
-        .buy-btn:hover { 
-            transform: translateY(-2px);
-            filter: brightness(1.2);
-            background-color: rgba(255, 255, 255, 0.05);
-        }
+        .buy-btn:hover { opacity: 0.9; transform: translateY(-1px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
 
-        /* Блок для владельцев */
         .brand-owner-box { 
             margin: 40px 0; 
-            padding: 20px; 
-            border: 1px solid #333; 
+            padding: 25px; 
+            border: 1px double #ccc; 
             background-color: var(--card-bg); 
             text-align: center; 
+            position: relative;
         }
         
-        .brand-owner-box a { color: var(--accent-gold); font-weight: bold; text-decoration: none; }
-        .brand-owner-box a:hover { text-decoration: underline; }
+        /* Маленькие декоративные скобки для блока владельца */
+        .brand-owner-box::before { content: '‹'; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: #ccc; font-size: 20px; }
+        .brand-owner-box::after { content: '›'; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: #ccc; font-size: 20px; }
 
-        /* Футер */
+        .brand-owner-box a { color: var(--accent-brown); font-weight: bold; text-decoration: none; border-bottom: 1px solid #ccc; }
+
         footer { 
             margin-top: 80px; 
             padding: 40px 20px; 
-            background-color: #050505; 
-            border-top: 1px solid #222; 
+            background-color: #eee; 
+            border-top: 1px solid #ddd; 
             text-align: center; 
         }
 
-        .footer-nav { margin-bottom: 25px; }
         .footer-nav a { 
             margin: 0 15px; 
-            color: var(--text-dim); 
+            color: #666; 
             text-decoration: none; 
             font-weight: 600; 
             font-size: 12px; 
             text-transform: uppercase;
         }
-        .footer-nav a:hover { color: var(--accent-gold); }
 
-        .legal-text { 
-            max-width: 800px; 
-            margin: 0 auto; 
-            line-height: 1.8; 
-            color: #555; 
-            font-size: 11px; 
-        }
-
-        .legal-tag { 
-            color: #777; 
-            font-weight: bold; 
-            text-transform: uppercase; 
-            letter-spacing: 1px; 
-            display: block; 
-            margin-top: 10px; 
-        }
+        .legal-text { max-width: 800px; margin: 0 auto; line-height: 1.8; color: #777; font-size: 11px; }
+        .legal-tag { color: #444; font-weight: bold; text-transform: uppercase; display: block; margin-top: 10px; }
     </style>
 </head>
 <body>
 
     <header>
-        <a href="/" style="text-decoration: none; color: #555; font-size: 12px; letter-spacing: 1px;">← BACK TO ATLAS</a>
+        <a href="/" style="text-decoration: none; color: #999; font-size: 11px; letter-spacing: 1px;">← BACK TO ATLAS SYSTEM</a>
         <h1 class="brand-title">{brand}</h1>
     </header>
 
@@ -147,15 +122,15 @@
         </div>
 
         <div class="marketplace-links">
-            <a href="{amazon_url}" target="_blank" rel="nofollow sponsored" class="buy-btn amazon-btn">View {brand} on Amazon</a>
-            <a href="{ebay_url}" target="_blank" rel="nofollow sponsored" class="buy-btn ebay-btn">Find {brand} on eBay</a>
+            <a href="{amazon_url}" target="_blank" rel="nofollow sponsored" class="buy-btn amazon-btn">Amazon Global Search</a>
+            <a href="{ebay_url}" target="_blank" rel="nofollow sponsored" class="buy-btn ebay-btn">eBay Marketplace</a>
         </div>
 
         <div class="brand-owner-box">
-            <p style="margin: 0; font-size: 14px; color: #888;">
-                <strong>Are you the owner of {brand}?</strong><br>
-                Verify your brand, update information, or manage your presence in our atlas. 
-                <br><a href="/contact.html">Claim this page</a> | <a href="/contact.html" style="color: #555; font-weight: normal;">Request removal</a>
+            <p style="margin: 0; font-size: 14px; color: #666;">
+                <strong>Brand Ownership Protocol</strong><br>
+                Are you the official representative of {brand}?<br>
+                <a href="/contact.html">Claim this profile</a> | <a href="/contact.html" style="color: #999; font-weight: normal; border: none;">Request removal</a>
             </p>
         </div>
     </main>
@@ -174,8 +149,8 @@
             <span class="legal-tag">Affiliate Disclosure</span>
             As an Amazon Associate, we earn from qualifying purchases. This site also participates in the eBay Partner Network and may earn commissions from links to eBay.com. This does not affect the price you pay as a consumer.
 
-            <p style="border-top: 1px solid #222; margin-top: 20px; padding-top: 20px; color: #444;">
-                &copy; 2026 <strong>Coffeenautica.com</strong>. All rights reserved.
+            <p style="border-top: 1px solid #ccc; margin-top: 20px; padding-top: 20px; color: #999;">
+                &copy; 2026 <strong>Coffenautica.com</strong>. All rights reserved.
             </p>
         </div>
     </footer>
