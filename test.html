@@ -6,12 +6,11 @@
     <title>{brand} | Coffee Atlas by Coffenautica</title>
     <style>
         :root {
-            --bg-color: #f4f4f4; /* Светло-серый, комфортный для глаз */
-            --card-bg: #ffffff;
-            --text-main: #222222;
-            --text-dim: #555555;
-            --accent-brown: #4b3022; /* Твой оригинальный коричневый */
-            --bracket-color: #999999;
+            --bg-color: #2b2d24; /* Тактический оливковый */
+            --card-bg: #35382d; /* Чуть светлее для блоков */
+            --text-main: #d1d1c1; /* Крем-брюле для чтения */
+            --accent-gold: #d4af37;
+            --bracket-color: #5a5e4a;
         }
 
         body { 
@@ -27,92 +26,90 @@
         header { 
             text-align: center; 
             padding: 40px 0; 
-            border-bottom: 1px solid #ddd; 
+            border-bottom: 1px solid var(--bracket-color); 
         }
 
         .brand-title { 
             font-size: 3rem; 
-            color: var(--accent-brown); 
+            color: var(--accent-gold); 
             margin: 0; 
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            font-weight: 800;
         }
 
-        .content-section { padding: 30px 0; }
+        .content-section { padding: 40px 0; }
 
-        /* Вместо палочки слева — оформление в скобки */
+        /* Оформление в технические скобки */
         .description { 
-            font-size: 1.1rem; 
-            color: var(--text-dim); 
+            font-size: 1.15rem; 
+            color: #b5b5a7; 
             margin-bottom: 30px; 
             position: relative;
-            padding: 20px 40px;
+            padding: 20px 50px;
             text-align: justify;
         }
 
-        .description::before { content: '['; position: absolute; left: 0; top: 0; font-size: 3rem; color: var(--bracket-color); font-weight: 100; }
-        .description::after { content: ']'; position: absolute; right: 0; bottom: 0; font-size: 3rem; color: var(--bracket-color); font-weight: 100; }
+        .description::before { content: '['; position: absolute; left: 0; top: -10px; font-size: 4rem; color: var(--bracket-color); font-weight: 100; }
+        .description::after { content: ']'; position: absolute; right: 0; bottom: -10px; font-size: 4rem; color: var(--bracket-color); font-weight: 100; }
         
         .marketplace-links { display: flex; gap: 20px; margin: 30px 0; flex-wrap: wrap; }
         
         .buy-btn { 
             flex: 1; 
             min-width: 200px; 
-            padding: 15px 25px; 
+            padding: 18px 25px; 
             text-align: center; 
             text-decoration: none; 
-            border-radius: 4px;
+            border-radius: 2px;
             font-weight: bold; 
             transition: 0.3s; 
             text-transform: uppercase;
             font-size: 13px;
+            letter-spacing: 1px;
         }
 
         .amazon-btn { background-color: #FF9900; color: #000; }
         .ebay-btn { background-color: #0053D6; color: #fff; }
 
-        .buy-btn:hover { opacity: 0.9; transform: translateY(-1px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .buy-btn:hover { filter: brightness(1.1); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
 
         .brand-owner-box { 
-            margin: 40px 0; 
-            padding: 25px; 
-            border: 1px double #ccc; 
+            margin: 50px 0; 
+            padding: 30px; 
+            border: 1px solid var(--bracket-color); 
             background-color: var(--card-bg); 
             text-align: center; 
-            position: relative;
         }
         
-        /* Маленькие декоративные скобки для блока владельца */
-        .brand-owner-box::before { content: '‹'; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: #ccc; font-size: 20px; }
-        .brand-owner-box::after { content: '›'; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: #ccc; font-size: 20px; }
-
-        .brand-owner-box a { color: var(--accent-brown); font-weight: bold; text-decoration: none; border-bottom: 1px solid #ccc; }
+        .brand-owner-box a { color: var(--accent-gold); font-weight: bold; text-decoration: none; }
 
         footer { 
             margin-top: 80px; 
-            padding: 40px 20px; 
-            background-color: #eee; 
-            border-top: 1px solid #ddd; 
+            padding: 50px 20px; 
+            background-color: #21231c; 
+            border-top: 1px solid var(--bracket-color); 
             text-align: center; 
         }
 
         .footer-nav a { 
             margin: 0 15px; 
-            color: #666; 
+            color: #6a6e5a; 
             text-decoration: none; 
             font-weight: 600; 
             font-size: 12px; 
             text-transform: uppercase;
         }
+        .footer-nav a:hover { color: var(--accent-gold); }
 
-        .legal-text { max-width: 800px; margin: 0 auto; line-height: 1.8; color: #777; font-size: 11px; }
-        .legal-tag { color: #444; font-weight: bold; text-transform: uppercase; display: block; margin-top: 10px; }
+        .legal-text { max-width: 800px; margin: 0 auto; line-height: 1.8; color: #5a5e4a; font-size: 11px; }
+        .legal-tag { color: #7a7e6a; font-weight: bold; text-transform: uppercase; display: block; margin-top: 10px; }
     </style>
 </head>
 <body>
 
     <header>
-        <a href="/" style="text-decoration: none; color: #999; font-size: 11px; letter-spacing: 1px;">← BACK TO ATLAS SYSTEM</a>
+        <a href="/" style="text-decoration: none; color: #5a5e4a; font-size: 11px; letter-spacing: 2px;">← BACK TO GLOBAL SYSTEM</a>
         <h1 class="brand-title">{brand}</h1>
     </header>
 
@@ -122,15 +119,15 @@
         </div>
 
         <div class="marketplace-links">
-            <a href="{amazon_url}" target="_blank" rel="nofollow sponsored" class="buy-btn amazon-btn">Amazon Global Search</a>
-            <a href="{ebay_url}" target="_blank" rel="nofollow sponsored" class="buy-btn ebay-btn">eBay Marketplace</a>
+            <a href="{amazon_url}" target="_blank" rel="nofollow sponsored" class="buy-btn amazon-btn">View on Amazon</a>
+            <a href="{ebay_url}" target="_blank" rel="nofollow sponsored" class="buy-btn ebay-btn">Find on eBay</a>
         </div>
 
         <div class="brand-owner-box">
-            <p style="margin: 0; font-size: 14px; color: #666;">
-                <strong>Brand Ownership Protocol</strong><br>
+            <p style="margin: 0; font-size: 14px; color: #8a8e7a;">
+                <strong>System Ownership Notice</strong><br>
                 Are you the official representative of {brand}?<br>
-                <a href="/contact.html">Claim this profile</a> | <a href="/contact.html" style="color: #999; font-weight: normal; border: none;">Request removal</a>
+                <a href="/contact.html">Claim this profile</a> | <a href="/contact.html" style="color: #5a5e4a; font-weight: normal;">Request removal</a>
             </p>
         </div>
     </main>
@@ -149,8 +146,8 @@
             <span class="legal-tag">Affiliate Disclosure</span>
             As an Amazon Associate, we earn from qualifying purchases. This site also participates in the eBay Partner Network and may earn commissions from links to eBay.com. This does not affect the price you pay as a consumer.
 
-            <p style="border-top: 1px solid #ccc; margin-top: 20px; padding-top: 20px; color: #999;">
-                &copy; 2026 <strong>Coffenautica.com</strong>. All rights reserved.
+            <p style="border-top: 1px solid #35382d; margin-top: 20px; padding-top: 20px; color: #4a4e3a;">
+                &copy; 2026 <strong>Coffeenautica.com</strong>. All rights reserved.
             </p>
         </div>
     </footer>
