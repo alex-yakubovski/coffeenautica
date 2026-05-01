@@ -56,6 +56,17 @@
             .wall-grid { grid-template-columns: repeat(6, 1fr); gap: 25px; }
         }
 
+/* Описание в шапке */
+.hero-desc {
+    max-width: 600px;
+    margin: 20px auto 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    font-style: italic;
+}
+
+
         /* КАРТОЧКА БРЕНДА */
         .brand-card {
             aspect-ratio: 1 / 1;
@@ -254,6 +265,26 @@
         justify-content: center;
         }
 
+/* Большой блок перед футером */
+.atlas-info {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+    text-align: left;
+}
+.info-container {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    line-height: 1.8;
+    color: #444;
+}
+.info-container h2, .info-container h3 { color: #6F4E37; }
+.info-container ul { padding-left: 20px; }
+.info-container li { margin-bottom: 10px; }
+
+
+
     </style>
 </head>
 <body>
@@ -262,6 +293,7 @@
     <h1>COFFEENAUTICA</h1>
     <p class="tagline">Scroll <span>&</span> Taste</p>
     <p class="sub-tagline">discover coffee universe</p>
+    <p class="hero-desc">Explore the global landscape of coffee through our systematic Atlas. We have categorized hundreds of roasters into distinct "Worlds" to help you navigate the rich heritage of the international coffee industry.</p>
 </header>
 
 <section id="world-1">
@@ -672,6 +704,25 @@
 
 </template>
 
+<!-- ОПИСАНИЕ ПРОЕКТА -->
+<section class="atlas-info">
+    <div class="info-container">
+        <h2>Exploring the Global Coffee Matrix: A Professional Atlas</h2>
+        <p>Welcome to the <strong>Global Coffee Matrix</strong>, the most comprehensive digital directory for exploring the world’s leading <strong>coffee brands</strong> and <strong>roasting traditions</strong>. This atlas is meticulously designed as a systematic resource to help you navigate the complex landscape of the international coffee industry. Whether you are searching for high-quality <strong>Arabica coffee beans</strong>, professional <strong>espresso blends</strong>, or unique <strong>single-origin roasters</strong>, our matrix provides a structured path to discovery.</p>
+
+        <h3>The Logic of Our Coffee Worlds</h3>
+        <p>Unlike a standard <strong>coffee shop</strong> locator, Coffeenautica categorizes brands into distinct segments based on their <strong>roasting profiles</strong>, market influence, and geographical heritage:</p>
+        <ul>
+            <li><strong>The Giants:</strong> Iconic global brands that defined the first and second waves of coffee, offering consistent <strong>dark roast</strong> and <strong>medium roast</strong> profiles through massive logistics networks.</li>
+            <li><strong>Italian Soul:</strong> A dedicated section for the spiritual home of <strong>espresso</strong>. Here, we focus on the traditional art of blending and the classic Italian roasting philosophy.</li>
+            <li><strong>Northern Lights & Euro Craft:</strong> Highlighting the <strong>Specialty Coffee</strong> movement in Scandinavia and Northern Europe, known for technical precision and <strong>light roast</strong> excellence.</li>
+            <li><strong>The Dollar Zone Roast:</strong> Showcasing the rapid evolution of North American <strong>coffee culture</strong>, from historic staples to modern third-wave micro-roasters.</li>
+        </ul>
+
+        <h3>Added Value: From Research to Brewing</h3>
+        <p>Our mission is to bridge the gap between historical coffee research and modern commerce. By analyzing <strong>roasting methods</strong>, brand history, and bean sourcing, we provide users with more than just a list. To make your exploration practical, each brand profile includes direct links to major global marketplaces like <strong>Amazon</strong> and <strong>eBay</strong>. This allows you to check availability for <strong>whole bean coffee</strong>, <strong>ground coffee</strong>, or <strong>coffee capsules</strong> in real-time, ensuring you find the perfect cup for your brewing setup.</p>
+    </div>
+</section>
 
 <!-- НИЖНИЙ ФУТЕР -->
 <footer style="margin-top: 80px; padding: 40px 20px; background-color: #dcdcdc; border-top: 1px solid #474747; font-family: sans-serif; text-align: center;">
