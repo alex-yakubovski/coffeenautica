@@ -57,15 +57,30 @@
         }
 
 /* Описание в шапке */
+
 .hero-desc {
-    max-width: 600px;
+    max-width: 650px;
     margin: 30px auto 0;
-    font-size: 15px;
+    font-family: 'Space Mono', monospace; /* Рубленый моноширинный шрифт */
+    font-size: 14px;
     line-height: 1.8;
-    color: #888; /* Более мягкий серый для черного фона */
-    font-style: italic;
-    font-weight: 300;
-    letter-spacing: 0.5px;
+    color: #888;
+    
+    /* Магия наклона: делаем его агрессивным */
+    display: block;
+    transform: skewX(-10deg); /* Наклон всего блока для эффекта скорости */
+    text-transform: uppercase; /* В верхнем регистре выглядит еще более технологично */
+    letter-spacing: 1px;
+    
+    /* Эффект свечения, чтобы текст не терялся на черном */
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.2); 
+}
+
+/* Выделение сильных слов внутри этого текста */
+.hero-desc strong {
+    color: var(--gold);
+    font-style: normal;
+    letter-spacing: 2px;
 }
 
 
@@ -302,7 +317,7 @@
 }
 
 .info-container strong {
-    color: #fff; /* Выделение важных слов белым */
+    color: #a2be3c; /* Выделение важных слов белым */
 }
 
 .info-container ul {
