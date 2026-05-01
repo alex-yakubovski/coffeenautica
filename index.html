@@ -59,25 +59,27 @@
 /* Описание в шапке */
 
 .hero-desc {
-    max-width: 750px;
+    max-width: 700px;
     margin: 35px auto 0;
+    /* Используем твой базовый Inter, но с особыми настройками */
     font-family: 'Inter', sans-serif;
-    font-size: 13px; /* Уменьшаем размер для изящности */
-    line-height: 2;   /* Увеличиваем межстрочный интервал */
-    color: #888;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #777; /* Чуть приглушаем, чтобы не спорил с заголовком */
     
-    text-transform: uppercase; /* Тот самый рубленный стиль */
-    letter-spacing: 4px;       /* Ключевой параметр для "необычности" */
-    font-weight: 300;          /* Тонкое начертание */
+    font-style: normal; /* Убираем наклон, чтобы не "резало" глаз */
+    text-transform: uppercase; /* Делаем текст рубленым через регистр */
+    letter-spacing: 3px; /* Сильно раздвигаем буквы (эффект премиальности) */
+    font-weight: 300; /* Делаем линии тонкими и четкими */
     
-    opacity: 0.7;
+    opacity: 0.8;
     text-align: center;
 }
 
 .hero-desc strong {
     color: var(--gold);
     font-weight: 700;
-    letter-spacing: 5px; /* Акцент на важных словах */
+    letter-spacing: 4px; /* Еще больше воздуха для главных слов */
 }
 
         /* КАРТОЧКА БРЕНДА */
