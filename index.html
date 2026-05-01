@@ -60,29 +60,30 @@
 
 .hero-desc {
     max-width: 650px;
-    margin: 30px auto 0;
-    font-family: 'Space Mono', monospace; /* Рубленый моноширинный шрифт */
-    font-size: 14px;
+    margin: 35px auto 0;
+    /* Используем Montserrat с весом 300 (легкий) */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
     line-height: 1.8;
-    color: #888;
+    color: #999;
     
-    /* Магия наклона: делаем его агрессивным */
+    /* Ультра-наклон */
     display: block;
-    transform: skewX(-10deg); /* Наклон всего блока для эффекта скорости */
-    text-transform: uppercase; /* В верхнем регистре выглядит еще более технологично */
-    letter-spacing: 1px;
+    font-style: italic; /* Родной курсив шрифта */
+    transform: skewX(-6deg); /* Дополнительный легкий сдвиг для уникальности */
     
-    /* Эффект свечения, чтобы текст не терялся на черном */
-    text-shadow: 0 0 8px rgba(212, 175, 55, 0.2); 
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    opacity: 0.8;
 }
 
-/* Выделение сильных слов внутри этого текста */
 .hero-desc strong {
     color: var(--gold);
-    font-style: normal;
-    letter-spacing: 2px;
+    font-weight: 500;
+    font-style: italic;
+    /* Усиливаем свечение для золотых слов */
+    text-shadow: 0 0 10px rgba(214, 175, 55, 0.3);
 }
-
 
         /* КАРТОЧКА БРЕНДА */
         .brand-card {
