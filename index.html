@@ -59,28 +59,33 @@
 /* Описание в шапке */
 
 .hero-desc {
-    max-width: 600px;
-    margin: 40px auto 0;
+    /* Ограничиваем ширину, чтобы текст не растягивался во всю ширь */
+    max-width: 500px; 
+    margin: 20px auto 0;
+    
     font-family: 'Inter', sans-serif;
-    font-size: 17px;
-    line-height: 1.5;
-    color: #999;
+    /* Делаем буквы ощутимо меньше основного заголовка */
+    font-size: 13px; 
+    line-height: 1.6;
+    color: #666; /* Чуть темнее, чтобы "утопить" текст в фоне */
     
-    /* Уходим от капса к характерному наклону */
     font-style: italic;
-    font-weight: 400;
-    letter-spacing: -0.2px; /* Наоборот, чуть сужаем буквы для "плотности" */
+    font-weight: 300;
+    letter-spacing: 0.5px;
     
-    opacity: 0.8;
+    opacity: 0.7;
     text-align: center;
-    border-left: 1px solid var(--gold); /* Добавляем тонкий вертикальный акцент слева */
-    padding-left: 20px;
+    
+    /* Оставляем легкий акцент, но делаем его короче */
+    border-left: 1px solid rgba(212, 175, 55, 0.4);
+    padding: 0 15px;
 }
 
 .hero-desc strong {
     color: var(--gold);
-    font-weight: 600;
-    font-style: normal; /* Контраст: жирное слово — прямое, остальное — в наклоне */
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
 }
 
         /* КАРТОЧКА БРЕНДА */
