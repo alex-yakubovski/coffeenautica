@@ -1,0 +1,37 @@
+# push → автоматически генерируются brand + journal pages
+# ничего не генерируешь вручную
+# edit JSON → commit → done
+
+name: Build Coffeenautica
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Generate articles
+        run: node scripts/generate-articles.js
+
+      - name: Generate brands
+        run: node scripts/generate-brands.js
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "auto build" || echo "no changes"
+          git push
