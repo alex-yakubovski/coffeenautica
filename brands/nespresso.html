@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Nespresso | Coffeenautica</title>
+
+  <meta name="description" content="Swiss coffee brand known for premium espresso capsules and coffee machines." />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .logo {
+      width: 140px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .country {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+
+    .journal-block {
+      border-top: 1px solid #ddd;
+      padding-top: 30px;
+    }
+
+    .journal-block h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .article-item {
+      margin-bottom: 14px;
+    }
+
+    a {
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="/">← Back to Atlas</a>
+
+  <div style="margin-top:40px;">
+    <img class="logo" src="/1_logos/1_nespresso.png" alt="Nespresso logo">
+
+    <h1>Nespresso</h1>
+
+    <div class="country">
+      Switzerland
+    </div>
+
+    <div class="description">
+      Swiss coffee brand known for premium espresso capsules and coffee machines.
+    </div>
+  </div>
+
+  <div class="journal-block">
+    <h2>Latest from the Journal</h2>
+
+    <div id="latest-articles">
+      Loading articles...
+    </div>
+  </div>
+
+  <script>
+    fetch('/data/latest-posts.json')
+      .then(response => response.json())
+      .then(posts => {
+        const container = document.getElementById('latest-articles');
+
+        if (!posts.length) {
+          container.innerHTML = 'No articles yet.';
+          return;
+        }
+
+        container.innerHTML = posts.slice(0, 5).map(post => `
+          <div class="article-item">
+            <a href="/journal/${post.slug}.html">
+              ${post.title}
+            </a>
+          </div>
+        `).join('');
+      })
+      .catch(() => {
+        document.getElementById('latest-articles').innerHTML =
+          'Unable to load articles.';
+      });
+  </script>
+
+</body>
+</html>
