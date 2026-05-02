@@ -4,4 +4,7 @@
 3. https://picflow.com/convert/png-to-webp - png to webp
 
 ГЕНЕРАЦИЯ СТРАНИЦ БРЕНДОВ
-- Из корня запускаем: node scripts/generate-brands.js 
+- Из корня запускаем: node scripts/generate-brands.js
+
+ГЕНЕРАЦИЯ СТАТЕЙ ЖУРНАЛА
+- Из корня запускаем: node scripts/generate-articles.js
