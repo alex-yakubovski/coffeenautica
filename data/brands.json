@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Nespresso",
+    "slug": "nespresso",
+    "country": "Switzerland",
+    "description": "Swiss coffee brand known for premium espresso capsules and coffee machines.",
+    "logo": "/1_logos/1_nespresso.png"
+  },
+  {
+    "name": "Nescafé",
+    "slug": "nescafe",
+    "country": "Switzerland",
+    "description": "Global instant coffee brand owned by Nestlé and recognized worldwide.",
+    "logo": "/1_logos/2_nescafe.png"
+  }
+]
