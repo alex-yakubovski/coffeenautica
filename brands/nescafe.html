@@ -85,7 +85,7 @@
   </div>
 
   <script>
-    fetch('/data/latest-posts.json')
+    fetch('../data/latest-posts.json')
       .then(response => response.json())
       .then(posts => {
         const container = document.getElementById('latest-articles');
