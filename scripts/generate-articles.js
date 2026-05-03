@@ -1,6 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
+const OpenAI = require("openai");
+const fs = require("fs");
+
 // paths
 const articlesPath = path.join(__dirname, '../data/articles.json');
 const templatePath = path.join(__dirname, '../templates/article-template.html');
