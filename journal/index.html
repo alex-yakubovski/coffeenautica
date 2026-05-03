@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Coffeenautica Journal</title>
+</head>
+<body>
+
+<h1>Journal</h1>
+
+<div id="articles">Loading...</div>
+
+<script>
+fetch('../data/articles.json')
+  .then(res => res.json())
+  .then(articles => {
+    document.getElementById('articles').innerHTML = articles.map(a => `
+      <div style="margin-bottom:20px;">
+        <h2>${a.title}</h2>
+        <a href="./${a.slug}.html">Read</a>
+      </div>
+    `).join('');
+  });
+</script>
+
+</body>
+</html>
