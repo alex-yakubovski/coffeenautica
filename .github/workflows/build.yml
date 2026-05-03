@@ -25,7 +25,15 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install openai
+
+      - name: Generate AI articles
+        run: node scripts/ai-generate-articles.js
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       - name: Generate articles
         run: node scripts/generate-articles.js
