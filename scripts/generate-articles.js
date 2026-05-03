@@ -1,47 +1,42 @@
-const fs = require('fs');
-const path = require('path');
+const OpenAI = require("openai");
+const fs = require("fs");
 
-// paths
-const articlesPath = path.join(__dirname, '../data/articles.json');
-const templatePath = path.join(__dirname, '../templates/article-template.html');
-const outputDir = path.join(__dirname, '../journal');
-const latestPostsPath = path.join(__dirname, '../data/latest-posts.json');
-
-// load data
-const articles = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
-const template = fs.readFileSync(templatePath, 'utf8');
-
-// create journal directory if not exists
-if (!fs.existsSync(outputDir)) {
-  fs.mkdirSync(outputDir, { recursive: true });
-}
-
-// generate article pages
-articles.forEach(article => {
-  let html = template;
-
-  html = html.replace(/{{TITLE}}/g, article.title);
-  html = html.replace(/{{DATE}}/g, article.date);
-  html = html.replace(/{{EXCERPT}}/g, article.excerpt);
-  html = html.replace(/{{CONTENT}}/g, article.content);
-
-  const outputPath = path.join(outputDir, `${article.slug}.html`);
-
-  fs.writeFileSync(outputPath, html);
-
-  console.log(`Generated article: ${article.slug}.html`);
+const client = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY
 });
 
-// generate latest-posts.json automatically
-const latestPosts = articles.map(article => ({
-  title: article.title,
-  slug: article.slug
-}));
+const topics = JSON.parse(fs.readFileSync("./data/topics.json", "utf8"));
 
-fs.writeFileSync(
-  latestPostsPath,
-  JSON.stringify(latestPosts, null, 2)
-);
+const articles = [];
 
-console.log('Updated latest-posts.json');
-console.log('Done.');
+async function run() {
+  for (const topic of topics) {
+    console.log("Generating:", topic);
+
+    const response = await client.chat.completions.create({
+      model: "gpt-4.1-mini",
+      messages: [
+        {
+          role: "system",
+          content: "Return ONLY valid JSON with title, slug, excerpt, date, content"
+        },
+        {
+          role: "user",
+          content: `Write article about: ${topic}`
+        }
+      ]
+    });
+
+    const article = JSON.parse(response.choices[0].message.content);
+    articles.push(article);
+  }
+
+  fs.writeFileSync(
+    "./data/articles.json",
+    JSON.stringify(articles, null, 2)
+  );
+
+  console.log("AI articles generated");
+}
+
+run();
