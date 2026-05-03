@@ -38,5 +38,5 @@ async function run() {
 
   console.log("AI articles generated");
 }
-
+console.log("test update");
 run();
