@@ -1,6 +1,7 @@
 # push → автоматически генерируются brand + journal pages
 # ничего не генерируешь вручную
 # edit JSON → commit → done
+#eee
 
 name: Build Coffeenautica
 
