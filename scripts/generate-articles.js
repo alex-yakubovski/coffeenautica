@@ -1,9 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 
-const OpenAI = require("openai");
-const fs = require("fs");
-
 // paths
 const articlesPath = path.join(__dirname, '../data/articles.json');
 const templatePath = path.join(__dirname, '../templates/article-template.html');
@@ -14,9 +11,9 @@ const latestPostsPath = path.join(__dirname, '../data/latest-posts.json');
 const articles = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
 const template = fs.readFileSync(templatePath, 'utf8');
 
-// create journal directory
+// create journal directory if not exists
 if (!fs.existsSync(outputDir)) {
-  fs.mkdirSync(outputDir);
+  fs.mkdirSync(outputDir, { recursive: true });
 }
 
 // generate article pages
@@ -47,5 +44,4 @@ fs.writeFileSync(
 );
 
 console.log('Updated latest-posts.json');
-
 console.log('Done.');
