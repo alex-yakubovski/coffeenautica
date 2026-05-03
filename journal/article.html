@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Article</title>
+</head>
+<body>
+
+<div id="content">Loading...</div>
+
+<script>
+const slug = new URLSearchParams(window.location.search).get("slug");
+
+fetch('../data/articles.json')
+  .then(r => r.json())
+  .then(data => {
+    const article = data.find(a => a.slug === slug);
+
+    if (!article) {
+      document.getElementById('content').innerHTML = "Not found";
+      return;
+    }
+
+    document.getElementById('content').innerHTML = `
+      <h1>${article.title}</h1>
+      <div>${article.content}</div>
+    `;
+  });
+</script>
+
+</body>
+</html>

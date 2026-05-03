@@ -20,7 +20,7 @@ fetch('../data/articles.json')
       data.map(a => `
         <div style="margin-bottom:20px;">
           <h2>${a.title}</h2>
-          <a href="./${a.slug}.html">Read</a>
+          <a href="./article.html?slug=${a.slug}">
         </div>
       `).join('');
   });
