@@ -19,8 +19,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          persist-credentials: true
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -28,14 +26,9 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install openai
+        run: npm install
 
-      - name: Generate AI articles
-        run: node scripts/ai-generate-articles.js
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
-      - name: Generate articles
+      - name: Generate articles (static)
         run: node scripts/generate-articles.js
 
       - name: Generate brands
@@ -47,4 +40,4 @@ jobs:
           git config user.email "github-actions@github.com"
           git add .
           git commit -m "auto build" || echo "no changes"
-          git push origin HEAD:${{ github.ref_name }}
+          git push

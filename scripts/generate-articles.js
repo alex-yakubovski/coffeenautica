@@ -1,42 +1,29 @@
-const OpenAI = require("openai");
 const fs = require("fs");
+const path = require("path");
 
-const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
-});
-
+// input
 const topics = JSON.parse(fs.readFileSync("./data/topics.json", "utf8"));
 
-const articles = [];
+// output
+const articles = topics.map((topic, i) => {
+  const slug = topic.toLowerCase().replace(/\s+/g, "-");
 
-async function run() {
-  for (const topic of topics) {
-    console.log("Generating:", topic);
+  return {
+    title: topic,
+    slug,
+    date: new Date().toISOString().split("T")[0],
+    excerpt: `Everything about ${topic} in modern coffee culture.`,
+    content: `
+      <p>${topic} is one of the key themes in modern coffee culture.</p>
+      <p>This article explores its origins, trends, and global impact.</p>
+      <p>More insights coming soon.</p>
+    `
+  };
+});
 
-    const response = await client.chat.completions.create({
-      model: "gpt-4.1-mini",
-      messages: [
-        {
-          role: "system",
-          content: "Return ONLY valid JSON with title, slug, excerpt, date, content"
-        },
-        {
-          role: "user",
-          content: `Write article about: ${topic}`
-        }
-      ]
-    });
+fs.writeFileSync(
+  "./data/articles.json",
+  JSON.stringify(articles, null, 2)
+);
 
-    const article = JSON.parse(response.choices[0].message.content);
-    articles.push(article);
-  }
-
-  fs.writeFileSync(
-    "./data/articles.json",
-    JSON.stringify(articles, null, 2)
-  );
-
-  console.log("AI articles generated");
-}
-console.log("test update");
-run();
+console.log("Static articles generated");
