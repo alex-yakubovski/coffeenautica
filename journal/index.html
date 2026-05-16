@@ -15,7 +15,9 @@ async function loadArticles() {
 
   try {
 
-    const response = await fetch('/coffeenautica/data/articles.json');
+    const response = await fetch(
+  'https://raw.githubusercontent.com/alex-yakubovski/coffeenautica/main/data/articles.json?cache=' + Date.now()
+);
 
     const articles = await response.json();
 
