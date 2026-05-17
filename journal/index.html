@@ -8,42 +8,56 @@
 <style>
 body {
   margin: 0;
-  background: #0f0f10;
-  color: #fff;
-  font-family: Arial;
-  padding: 40px;
+  background: #0b0c10;
+  color: #eaeaea;
+  font-family: Georgia, serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 44px;
+  font-weight: 400;
   margin-bottom: 30px;
 }
 
+.date {
+  opacity: 0.6;
+  margin-bottom: 40px;
+}
+
+/* ARTICLE */
+.content {
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+/* INDEX */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  gap: 14px;
 }
 
 .card {
-  background: #1a1a1d;
-  padding: 20px;
-  border-radius: 14px;
-  border: 1px solid #2a2a2f;
-  transition: 0.2s;
+  padding: 18px;
+  border-bottom: 1px solid #222;
+  text-decoration: none;
+  color: inherit;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  border-color: #444;
+  background: #121318;
 }
 
-.title {
+.card-title {
   font-size: 18px;
-  margin-bottom: 10px;
 }
 
-.date {
+.card-date {
   font-size: 12px;
   opacity: 0.6;
 }
@@ -53,38 +67,35 @@ h1 {
 
 <body>
 
-<h1>Journal</h1>
+<div class="container">
 
-<div class="grid">
 
-    <a href="./japanese-coffee-culture.html" style="text-decoration:none;color:inherit;">
-      <div class="card">
-        <div class="title">Japanese Coffee Culture</div>
-        <div class="date">Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)</div>
-      </div>
+  <h1>Journal</h1>
+  <div class="grid">
+    
+    <a href="./japanese-coffee-culture.html" class="card">
+      <div class="card-title">Japanese Coffee Culture</div>
+      <div class="card-date">Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)</div>
     </a>
   
-    <a href="./coffee-trends-2026.html" style="text-decoration:none;color:inherit;">
-      <div class="card">
-        <div class="title">Coffee Trends 2026</div>
-        <div class="date">Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)</div>
-      </div>
+    <a href="./coffee-trends-2026.html" class="card">
+      <div class="card-title">Coffee Trends 2026</div>
+      <div class="card-date">Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)</div>
     </a>
   
-    <a href="./italian-espresso-history.html" style="text-decoration:none;color:inherit;">
-      <div class="card">
-        <div class="title">Italian Espresso History</div>
-        <div class="date">Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)</div>
-      </div>
+    <a href="./italian-espresso-history.html" class="card">
+      <div class="card-title">Italian Espresso History</div>
+      <div class="card-date">Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)</div>
     </a>
   
-    <a href="./roasting-culture-of-nordic-countries.html" style="text-decoration:none;color:inherit;">
-      <div class="card">
-        <div class="title">Roasting culture of Nordic countries</div>
-        <div class="date">Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)</div>
-      </div>
+    <a href="./roasting-culture-of-nordic-countries.html" class="card">
+      <div class="card-title">Roasting culture of Nordic countries</div>
+      <div class="card-date">Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)</div>
     </a>
   
+  </div>
+
+
 </div>
 
 </body>
