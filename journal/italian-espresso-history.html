@@ -8,8 +8,8 @@
 <style>
 body {
   margin: 0;
-  background: #0b0c10;
-  color: #eaeaea;
+  background: #f4f6f1;
+  color: #2f3a2f;
   font-family: Georgia, serif;
 }
 
@@ -20,19 +20,21 @@ body {
 }
 
 h1 {
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .date {
   opacity: 0.6;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  font-size: 14px;
 }
 
 .content {
   font-size: 19px;
   line-height: 1.8;
+  color: #3d4a3d;
 }
 
 .grid {
@@ -42,22 +44,38 @@ h1 {
 
 .card {
   padding: 18px;
-  border-bottom: 1px solid #222;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #d9e0d3;
   text-decoration: none;
   color: inherit;
+  transition: 0.2s;
 }
 
 .card:hover {
-  background: #121318;
+  background: #eef2e9;
+  transform: translateY(-2px);
 }
 
 .card-title {
   font-size: 18px;
+  margin-bottom: 6px;
 }
 
 .card-date {
   font-size: 12px;
   opacity: 0.6;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #6b7a6b;
+  text-decoration: none;
+}
+
+.back:hover {
+  color: #2f3a2f;
 }
 </style>
 
@@ -68,14 +86,14 @@ h1 {
 <div class="container">
 
 
-  <a href="./index.html" style="color:#888;text-decoration:none;">? Journal</a>
+  <a class="back" href="../journal/index.html">? Back to Journal</a>
 
   <h1>Italian Espresso History</h1>
   <div class="date">17 May 2026</div>
 
   <div class="content">
     
-      <h1>Italian Espresso History</h1>
+      
 
       <p>Italian Espresso History continues to shape modern coffee culture worldwide.</p>
 
