@@ -2,36 +2,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Journal</title>
+<meta charset="UTF-8">
+<title>Journal</title>
+
+<style>
+body {
+  margin: 0;
+  background: #0f0f10;
+  color: #fff;
+  font-family: Arial;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1d;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #2a2a2f;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #444;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 12px;
+  opacity: 0.6;
+}
+</style>
+
 </head>
+
 <body>
 
 <h1>Journal</h1>
 
-<ul>
+<div class="grid">
 
-    <li>
-      <a href="./japanese-coffee-culture.html">Japanese Coffee Culture</a>
-      ? Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)
-    </li>
+    <a href="./japanese-coffee-culture.html" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <div class="title">Japanese Coffee Culture</div>
+        <div class="date">Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)</div>
+      </div>
+    </a>
   
-    <li>
-      <a href="./coffee-trends-2026.html">Coffee Trends 2026</a>
-      ? Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)
-    </li>
+    <a href="./coffee-trends-2026.html" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <div class="title">Coffee Trends 2026</div>
+        <div class="date">Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)</div>
+      </div>
+    </a>
   
-    <li>
-      <a href="./italian-espresso-history.html">Italian Espresso History</a>
-      ? Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)
-    </li>
+    <a href="./italian-espresso-history.html" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <div class="title">Italian Espresso History</div>
+        <div class="date">Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)</div>
+      </div>
+    </a>
   
-    <li>
-      <a href="./roasting-culture-of-nordic-countries.html">Roasting culture of Nordic countries</a>
-      ? Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)
-    </li>
+    <a href="./roasting-culture-of-nordic-countries.html" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <div class="title">Roasting culture of Nordic countries</div>
+        <div class="date">Sun May 17 2026 00:00:00 GMT-0400 (Eastern Daylight Time)</div>
+      </div>
+    </a>
   
-</ul>
+</div>
 
 </body>
 </html>
