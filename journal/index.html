@@ -21,9 +21,27 @@ body {
 
 h1 { font-size: 42px; font-weight: 400; }
 
-.date { opacity: 0.6; margin-bottom: 25px; }
+.date { opacity: 0.6; margin-bottom: 20px; }
 
 .content { font-size: 19px; line-height: 1.8; }
+
+.hero {
+  margin: 18px 0 26px 0;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    max-height: 240px;
+  }
+}
 
 .grid { display: grid; gap: 14px; }
 
@@ -36,21 +54,19 @@ h1 { font-size: 42px; font-weight: 400; }
   color: inherit;
 }
 
-.card:hover { background: #eef2e6; }
-
 .back {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: #6c7a6c;
-  text-decoration: none;
+  display:inline-block;
+  margin-bottom:20px;
+  color:#6c7a6c;
+  text-decoration:none;
 }
 
 .author {
-  margin-top: 40px;
-  font-size: 13px;
-  opacity: 0.7;
-  border-top: 1px solid #d9e0d3;
-  padding-top: 10px;
+  margin-top:40px;
+  font-size:13px;
+  opacity:0.7;
+  border-top:1px solid #d9e0d3;
+  padding-top:10px;
 }
 </style>
 
