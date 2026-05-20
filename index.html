@@ -853,9 +853,11 @@
     </div>
 </footer>
 
-<script>
+
 
 //СКРИПТ ПОДСТАНОВКИ ССЫЛОК ГЕНЕРИРОВАНЫХ СТРАНИЦ БРЕНДОВ
+<script>
+
 function slugify(text) {
 
   return text
@@ -872,21 +874,21 @@ function slugify(text) {
 
 document.querySelectorAll(".brand-card:not(.ad-nest)").forEach(card => {
 
-  const brandName =
-    card.querySelector(".brand-name")?.innerText?.trim();
+  const brandName = card
+    .querySelector(".brand-name")
+    ?.textContent
+    ?.trim();
 
   if (!brandName) return;
 
   const slug = slugify(brandName);
 
-  const link = document.createElement("a");
+  card.style.cursor = "pointer";
 
-  link.href = `/brands/${slug}.html`;
-  link.className = "brand-link";
+  card.addEventListener("click", () => {
+    window.location.href = `/brands/${slug}.html`;
+  });
 
-  card.parentNode.insertBefore(link, card);
-
-  link.appendChild(card);
 });
 
 </script>
