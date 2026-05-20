@@ -370,9 +370,6 @@
     padding-left: 20px;
     border-left: 1px solid var(--gold); /* Тонкая золотая линия вместо кофейной */
 }
-
-
-
     </style>
 
 
@@ -855,5 +852,45 @@
         </p>
     </div>
 </footer>
+
+<script>
+
+//СКРИПТ ПОДСТАНОВКИ ССЫЛОК ГЕНЕРИРОВАНЫХ СТРАНИЦ БРЕНДОВ
+function slugify(text) {
+
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/&/g, "and")
+    .replace(/'/g, "")
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/--+/g, "-")
+    .trim();
+}
+
+document.querySelectorAll(".brand-card:not(.ad-nest)").forEach(card => {
+
+  const brandName =
+    card.querySelector(".brand-name")?.innerText?.trim();
+
+  if (!brandName) return;
+
+  const slug = slugify(brandName);
+
+  const link = document.createElement("a");
+
+  link.href = `/brands/${slug}.html`;
+  link.className = "brand-link";
+
+  card.parentNode.insertBefore(link, card);
+
+  link.appendChild(card);
+});
+
+</script>
+
+
 </body>
 </html>
